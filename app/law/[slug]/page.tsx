@@ -3,11 +3,15 @@ import type { Metadata } from "next";
 import { getAllLaws, getLawBySlug } from "@/lib/laws";
 import { ReportCard } from "@/components/ReportCard/ReportCard";
 import { InTheYearsFollowing } from "@/components/InTheYearsFollowing";
-import Link from "next/link";
+import { BackButton } from "@/components/BackButton";
 import fredSeriesData from "@/data/fred-series.json";
 
 // Build a flat map of series ID -> human-readable name
-const seriesNameMap: Record<string, string> = {};
+const seriesNameMap: Record<string, string> = {
+  // Fallbacks for series not in fred-series.json
+  FEDFUNDS: "Federal Funds Rate",
+  SP500: "S&P 500 Index",
+};
 for (const group of fredSeriesData.groups) {
   for (const s of group.series) {
     seriesNameMap[s.id] = s.name;
@@ -43,17 +47,15 @@ export default async function LawPage({ params }: PageProps) {
   if (!law) notFound();
 
   return (
-    <div className="max-w-2xl mx-auto">
+    <div>
       <div className="mb-6">
-        <Link href="/" className="btn text-xs">
-          ← Back to Timeline
-        </Link>
+        <BackButton />
       </div>
 
       <ReportCard law={law} />
 
       {/* In the Years Following section */}
-      <div className="punch-card max-w-[640px] w-full mt-8 px-7 py-6">
+      <div className="punch-card mt-8 px-7 py-6">
         <div className="section-label">In the Years Following</div>
         <p className="font-mono text-sm text-ink-600 mb-4">
           Economic indicators related to this {law.type === "court_decision" ? "decision" : "law"},

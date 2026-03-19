@@ -22,7 +22,7 @@ const config: Config = {
           900: "#1A1408",  // ink-stamp — darkest, rubber stamp
           800: "#2C2416",  // text-primary — near-black warm
           600: "#6B5D4A",  // text-secondary — muted brown
-          400: "#9A8C74",  // text-muted — faded typewriter
+          400: "#7D7060",  // text-muted — faded typewriter (improved contrast)
         },
         party: {
           dem: "#3B5998",  // Democrat — muted steel blue
@@ -42,14 +42,14 @@ const config: Config = {
         condensed: ['"IBM Plex Sans Condensed"', '"Arial Narrow"', "sans-serif"],
       },
       fontSize: {
-        "2xs": ["10px", { lineHeight: "16px", letterSpacing: "0.08em" }],
-        xs: ["11px", { lineHeight: "18px", letterSpacing: "0.06em" }],
-        sm: ["12px", { lineHeight: "20px", letterSpacing: "0.04em" }],
-        base: ["13px", { lineHeight: "22px", letterSpacing: "0.01em" }],
-        md: ["14px", { lineHeight: "24px" }],
-        lg: ["18px", { lineHeight: "26px" }],
-        xl: ["22px", { lineHeight: "28px" }],
-        "2xl": ["28px", { lineHeight: "34px" }],
+        "2xs": ["11px", { lineHeight: "17px", letterSpacing: "0.06em" }],
+        xs: ["12px", { lineHeight: "19px", letterSpacing: "0.04em" }],
+        sm: ["13.5px", { lineHeight: "22px", letterSpacing: "0.03em" }],
+        base: ["15px", { lineHeight: "24px", letterSpacing: "0.01em" }],
+        md: ["16px", { lineHeight: "26px" }],
+        lg: ["20px", { lineHeight: "28px" }],
+        xl: ["24px", { lineHeight: "30px" }],
+        "2xl": ["30px", { lineHeight: "38px" }],
       },
       boxShadow: {
         card: "2px 3px 0 #C4B99A, 4px 6px 0 #E6E0D2",

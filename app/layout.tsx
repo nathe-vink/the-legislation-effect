@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "The Legislation Effect — How Laws Changed Your Life",
+  title: "The Legislation Effect — How Laws Shape Our Lives",
   description:
-    "Explore decades of economic data annotated with the landmark legislation that shaped wages, housing costs, healthcare, inequality, and more. See how specific laws impacted your life.",
+    "Explore decades of economic data annotated with the landmark legislation that shaped wages, housing costs, healthcare, inequality, and more. See how specific laws shaped our lives.",
   openGraph: {
     title: "The Legislation Effect",
-    description: "How Laws Changed Your Life",
+    description: "How Laws Shape Our Lives",
     type: "website",
   },
 };
@@ -27,7 +27,7 @@ export default function RootLayout({
                 The Legislation Effect
               </span>
               <span className="font-mono text-lg font-bold tracking-wider text-ink-900 block uppercase">
-                How Laws Changed Your Life
+                How Laws Shape Our Lives
               </span>
             </a>
             <div className="flex gap-2 flex-wrap">
@@ -35,7 +35,7 @@ export default function RootLayout({
                 Stories
               </a>
               <a href="/laws" className="btn">
-                All Laws
+                Laws
               </a>
               <a href="/your-life" className="btn">
                 Your Life

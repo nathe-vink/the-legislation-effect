@@ -92,7 +92,7 @@ export function StoryChapter({ story, laws }: StoryChapterProps) {
       </div>
 
       {/* Narrative */}
-      <div className="font-mono text-sm text-ink-800 leading-relaxed mb-5 max-w-prose">
+      <div className="font-mono text-sm text-ink-800 leading-relaxed mb-5">
         {story.narrative.split("\n\n").map((paragraph, i) => (
           <p key={i} className={i > 0 ? "mt-3" : ""}>
             {paragraph}

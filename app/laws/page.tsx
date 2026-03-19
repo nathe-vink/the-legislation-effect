@@ -18,12 +18,12 @@ export default function LawsPage() {
     : laws;
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <div>
       <h1 className="font-mono text-2xl font-bold tracking-wider text-ink-900 uppercase mb-2">
-        All Laws
+        A Selection of Laws Passed Since 1930
       </h1>
       <p className="font-mono text-sm text-ink-600 mb-6">
-        {laws.length} landmark laws, court decisions, and executive actions from 1930 to 2022.
+        {laws.length} landmark laws, court decisions, and executive actions that shaped the American economy.
       </p>
 
       {/* Category filters */}

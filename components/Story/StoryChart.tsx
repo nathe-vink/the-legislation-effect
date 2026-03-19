@@ -75,8 +75,10 @@ export function StoryChart({
 
     svg.selectAll("*").remove();
 
-    // Extra right margin for inline labels
-    const margin = { top: 16, right: 130, bottom: 36, left: 50 };
+    // Compute right margin based on longest label
+    const maxLabelLen = Math.max(...seriesData.map((s) => s.name.length), 10);
+    const rightMargin = Math.min(200, Math.max(130, maxLabelLen * 7.5));
+    const margin = { top: 16, right: rightMargin, bottom: 36, left: 50 };
     const width = dimensions.width - margin.left - margin.right;
     const height = dimensions.height - margin.top - margin.bottom;
 

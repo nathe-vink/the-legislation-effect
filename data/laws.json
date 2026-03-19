@@ -19,7 +19,7 @@
       { "name": "Willis C. Hawley", "party": "R", "state": "OR", "chamber": "House" },
       { "name": "Reed Smoot", "party": "R", "state": "UT", "chamber": "Senate" }
     ],
-    "relatedFredSeries": ["UNRATE", "CPIAUCSL"],
+    "relatedFredSeries": ["MANEMP", "SP500"],
     "relatedLaws": ["reciprocal-trade-agreements-1934"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Smoot%E2%80%93Hawley_Tariff_Act",
@@ -47,7 +47,7 @@
       { "name": "Carter Glass", "party": "D", "state": "VA", "chamber": "Senate" },
       { "name": "Henry B. Steagall", "party": "D", "state": "AL", "chamber": "House" }
     ],
-    "relatedFredSeries": ["CP", "SP500", "FEDFUNDS"],
+    "relatedFredSeries": ["SP500", "MANEMP"],
     "relatedLaws": ["gramm-leach-bliley-1999", "dodd-frank-2010"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Glass%E2%80%93Steagall_legislation",
@@ -78,7 +78,7 @@
     "sponsors": [
       { "name": "Henry B. Steagall", "party": "D", "state": "AL", "chamber": "House" }
     ],
-    "relatedFredSeries": ["USSTHPI", "RHORUSQ156N", "MORTGAGE30US"],
+    "relatedFredSeries": ["MANEMP", "SP500"],
     "relatedLaws": ["fair-housing-act-1968", "community-reinvestment-act-1977"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/National_Housing_Act_of_1934",
@@ -109,7 +109,7 @@
     "sponsors": [
       { "name": "Cordell Hull", "party": "D", "state": "TN", "chamber": "Senate" }
     ],
-    "relatedFredSeries": ["UNRATE", "CPIAUCSL"],
+    "relatedFredSeries": ["MANEMP", "SP500"],
     "relatedLaws": ["smoot-hawley-1930", "trade-expansion-act-1962"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Reciprocal_Tariff_Act",
@@ -137,7 +137,7 @@
       { "name": "Sam Rayburn", "party": "D", "state": "TX", "chamber": "House" },
       { "name": "Duncan U. Fletcher", "party": "D", "state": "FL", "chamber": "Senate" }
     ],
-    "relatedFredSeries": ["CP", "CPIAUCSL"],
+    "relatedFredSeries": ["SP500", "MANEMP"],
     "relatedLaws": ["glass-steagall-1933", "dodd-frank-2010"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Securities_Exchange_Act_of_1934",
@@ -165,7 +165,7 @@
       { "name": "Robert F. Wagner", "party": "D", "state": "NY", "chamber": "Senate" },
       { "name": "William P. Connery Jr.", "party": "D", "state": "MA", "chamber": "House" }
     ],
-    "relatedFredSeries": ["MANEMP", "AHETPI", "PRS85006173"],
+    "relatedFredSeries": ["MANEMP", "SP500"],
     "relatedLaws": ["taft-hartley-1947", "landrum-griffin-1959"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/National_Labor_Relations_Act_of_1935",
@@ -193,7 +193,7 @@
       { "name": "Robert F. Wagner", "party": "D", "state": "NY", "chamber": "Senate" },
       { "name": "David J. Lewis", "party": "D", "state": "MD", "chamber": "House" }
     ],
-    "relatedFredSeries": ["MEHOINUSA672N", "CIVPART", "CPIAUCSL"],
+    "relatedFredSeries": ["MANEMP", "SP500"],
     "relatedLaws": ["medicare-medicaid-1965", "welfare-reform-1996"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Social_Security_Act",
@@ -221,7 +221,7 @@
       { "name": "Hugo Black", "party": "D", "state": "AL", "chamber": "Senate" },
       { "name": "William P. Connery Jr.", "party": "D", "state": "MA", "chamber": "House" }
     ],
-    "relatedFredSeries": ["FEDMINNFRWG", "AHETPI", "UNRATE"],
+    "relatedFredSeries": ["FEDMINNFRWG", "MANEMP", "UNRATE"],
     "relatedLaws": ["wagner-act-1935", "taft-hartley-1947"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Fair_Labor_Standards_Act_of_1938",
@@ -249,7 +249,7 @@
       { "name": "John E. Rankin", "party": "D", "state": "MS", "chamber": "House" },
       { "name": "Ernest McFarland", "party": "D", "state": "AZ", "chamber": "Senate" }
     ],
-    "relatedFredSeries": ["CUSR0000SEEB", "RHORUSQ156N", "MEHOINUSA672N"],
+    "relatedFredSeries": ["MANEMP", "CPIAUCSL", "UNRATE"],
     "relatedLaws": ["national-housing-act-1934", "civil-rights-act-1964"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/G.I._Bill",
@@ -281,7 +281,7 @@
       { "name": "Robert A. Taft", "party": "R", "state": "OH", "chamber": "Senate" },
       { "name": "Fred A. Hartley Jr.", "party": "R", "state": "NJ", "chamber": "House" }
     ],
-    "relatedFredSeries": ["MANEMP", "AHETPI", "OPHNFB"],
+    "relatedFredSeries": ["MANEMP", "UNRATE", "OPHNFB"],
     "relatedLaws": ["wagner-act-1935", "landrum-griffin-1959"],
     "congressGovUrl": "https://www.congress.gov/bill/80th-congress/house-bill/3020",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Taft%E2%80%93Hartley_Act",
@@ -397,7 +397,7 @@
       { "name": "Wilbur Mills", "party": "D", "state": "AR", "chamber": "House" },
       { "name": "Harry F. Byrd", "party": "D", "state": "VA", "chamber": "Senate" }
     ],
-    "relatedFredSeries": ["MEHOINUSA672N", "CP", "GINIALLRF", "UNRATE"],
+    "relatedFredSeries": ["AHETPI", "CP", "GINIALLRF", "UNRATE"],
     "relatedLaws": ["tax-reform-act-1986", "egtrra-2001"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Revenue_Act_of_1964",
@@ -429,7 +429,7 @@
       { "name": "Emanuel Celler", "party": "D", "state": "NY", "chamber": "House" },
       { "name": "Warren Magnuson", "party": "D", "state": "WA", "chamber": "Senate" }
     ],
-    "relatedFredSeries": ["MEHOINUSA672N", "GINIALLRF", "CIVPART", "UNRATE"],
+    "relatedFredSeries": ["AHETPI", "GINIALLRF", "CIVPART", "UNRATE"],
     "relatedLaws": ["fair-housing-act-1968", "welfare-reform-1996"],
     "congressGovUrl": "https://www.congress.gov/bill/88th-congress/house-bill/7152",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Civil_Rights_Act_of_1964",
@@ -461,7 +461,7 @@
       { "name": "Wilbur Mills", "party": "D", "state": "AR", "chamber": "House" },
       { "name": "Clinton P. Anderson", "party": "D", "state": "NM", "chamber": "Senate" }
     ],
-    "relatedFredSeries": ["CPIMEDSL", "CPIAUCSL", "MEHOINUSA672N"],
+    "relatedFredSeries": ["CPIMEDSL", "CPIAUCSL", "CIVPART"],
     "relatedLaws": ["social-security-act-1935", "affordable-care-act"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Social_Security_Amendments_of_1965",
@@ -577,7 +577,7 @@
       { "name": "Harrison A. Williams", "party": "D", "state": "NJ", "chamber": "Senate" },
       { "name": "John H. Dent", "party": "D", "state": "PA", "chamber": "House" }
     ],
-    "relatedFredSeries": ["CPIMEDSL", "MEHOINUSA672N", "AHETPI"],
+    "relatedFredSeries": ["CPIMEDSL", "CPIAUCSL", "AHETPI"],
     "relatedLaws": ["affordable-care-act", "cobra-1985"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Employee_Retirement_Income_Security_Act",

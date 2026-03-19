@@ -30,7 +30,7 @@ export default function HomePage() {
         <h1 className="font-mono text-2xl font-bold tracking-wider text-ink-900 uppercase leading-tight mb-3">
           Since 1947, Congress passed hundreds of laws that shaped the American economy.
         </h1>
-        <p className="font-mono text-sm text-ink-600 leading-relaxed max-w-2xl">
+        <p className="font-mono text-sm text-ink-600 leading-relaxed">
           Productivity rose 253%. Wages rose 116%. Housing costs rose 2,100%.
           Medical costs rose 4,200%. These are the laws that made it happen —
           and the real, measurable outcomes they had on American lives.
@@ -56,13 +56,13 @@ export default function HomePage() {
                 : "story-card"
             }`}
           >
-            <div className="font-mono text-sm font-bold text-ink-900 uppercase tracking-wide mb-1">
+            <div className="font-mono text-base font-bold text-ink-900 uppercase tracking-wide mb-1">
               {story.headline}
             </div>
-            <div className="font-mono text-xs text-ink-400 italic mb-2">
+            <div className="font-mono text-sm text-ink-400 italic mb-2">
               {story.subtitle}
             </div>
-            <div className="font-mono text-sm text-ink-600 leading-relaxed">
+            <div className="font-mono text-sm text-ink-800 leading-relaxed">
               {story.abstract}
             </div>
           </button>
@@ -79,7 +79,7 @@ export default function HomePage() {
       {/* Footer link to all laws */}
       <div className="text-center py-6">
         <a href="/laws" className="btn btn-active">
-          Browse All 48 Laws →
+          Browse All Laws →
         </a>
       </div>
     </div>

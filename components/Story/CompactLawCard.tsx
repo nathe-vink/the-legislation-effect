@@ -25,11 +25,11 @@ export function CompactLawCard({ law }: CompactLawCardProps) {
           </span>
           <span className="font-mono text-2xs text-ink-400">{year}</span>
         </div>
-        <div className="font-mono text-xs font-bold text-ink-900 uppercase tracking-wide group-hover:text-mark transition-colors duration-150">
+        <div className="font-mono text-sm font-bold text-ink-900 uppercase tracking-wide group-hover:text-mark transition-colors duration-150">
           {law.name}
         </div>
-        <div className="font-mono text-2xs text-ink-600 mt-1 leading-relaxed line-clamp-2">
-          {law.summary.slice(0, 120)}{law.summary.length > 120 ? "..." : ""}
+        <div className="font-mono text-xs text-ink-600 mt-1 leading-relaxed line-clamp-2">
+          {law.summary.slice(0, 150)}{law.summary.length > 150 ? "..." : ""}
         </div>
       </div>
     </a>

@@ -110,6 +110,13 @@ export function BeforeAfterChart({
     const yExtent = d3.extent(validData, (d) => d.value) as [number, number];
     const yPadding = (yExtent[1] - yExtent[0]) * 0.1 || yExtent[1] * 0.1;
 
+    // If only 1 data point, widen the domain so ticks aren't repeated
+    if (validData.length === 1) {
+      const singleDate = new Date(validData[0].date);
+      xExtent[0] = new Date(singleDate.getFullYear() - 1, 0, 1);
+      xExtent[1] = new Date(singleDate.getFullYear() + 1, 0, 1);
+    }
+
     const x = d3.scaleTime().domain(xExtent).range([0, width]);
     const y = d3
       .scaleLinear()
@@ -129,10 +136,12 @@ export function BeforeAfterChart({
         .attr("opacity", 0.5);
     });
 
-    // X axis
+    // X axis — reduce tick count for narrow date ranges to avoid repeated labels
+    const dateRangeYears = (xExtent[1].getTime() - xExtent[0].getTime()) / (365.25 * 24 * 60 * 60 * 1000);
+    const xTickCount = Math.max(2, Math.min(width > 400 ? 8 : 5, Math.floor(dateRangeYears)));
     const xAxis = d3
       .axisBottom(x)
-      .ticks(width > 400 ? 8 : 5)
+      .ticks(xTickCount)
       .tickFormat((d) => d3.timeFormat("%Y")(d as Date));
 
     g.append("g")
@@ -158,19 +167,27 @@ export function BeforeAfterChart({
       .selectAll("line, path")
       .attr("stroke", "var(--border-primary)");
 
-    // Data line
-    const line = d3
-      .line<{ date: string; value: number }>()
-      .x((d) => x(new Date(d.date)))
-      .y((d) => y(d.value))
-      .curve(d3.curveLinear);
+    // Data: if only 1 point, show a dot instead of a line
+    if (validData.length === 1) {
+      g.append("circle")
+        .attr("cx", x(new Date(validData[0].date)))
+        .attr("cy", y(validData[0].value))
+        .attr("r", 4)
+        .attr("fill", "var(--text-primary)");
+    } else {
+      const line = d3
+        .line<{ date: string; value: number }>()
+        .x((d) => x(new Date(d.date)))
+        .y((d) => y(d.value))
+        .curve(d3.curveLinear);
 
-    g.append("path")
-      .datum(validData)
-      .attr("fill", "none")
-      .attr("stroke", "var(--text-primary)")
-      .attr("stroke-width", 2)
-      .attr("d", line);
+      g.append("path")
+        .datum(validData)
+        .attr("fill", "none")
+        .attr("stroke", "var(--text-primary)")
+        .attr("stroke-width", 2)
+        .attr("d", line);
+    }
 
     // Enacted annotation line
     const lawDateObj = new Date(lawDate);

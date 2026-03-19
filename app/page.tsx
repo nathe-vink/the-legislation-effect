@@ -28,7 +28,7 @@ export default function HomePage() {
       {/* Hero section */}
       <div className="mb-6">
         <h1 className="font-mono text-2xl font-bold tracking-wider text-ink-900 uppercase leading-tight mb-3">
-          Since 1947, Congress passed hundreds of laws that shaped the American economy.
+          Since 1930, Congress passed hundreds of laws that shaped the American economy.
         </h1>
         <p className="font-mono text-sm text-ink-600 leading-relaxed">
           Productivity rose 253%. Wages rose 116%. Housing costs rose 2,100%.

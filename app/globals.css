@@ -232,6 +232,10 @@ a:hover {
     padding: 1.25rem;
     cursor: pointer;
     transition: all 150ms ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
   }
 
   .story-card:hover {

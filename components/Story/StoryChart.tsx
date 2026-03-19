@@ -78,7 +78,7 @@ export function StoryChart({
     // Compute right margin based on longest label
     const maxLabelLen = Math.max(...seriesData.map((s) => s.name.length), 10);
     const rightMargin = Math.min(200, Math.max(130, maxLabelLen * 7.5));
-    const margin = { top: 16, right: rightMargin, bottom: 36, left: 50 };
+    const margin = { top: 16, right: rightMargin, bottom: 36, left: 60 };
     const width = dimensions.width - margin.left - margin.right;
     const height = dimensions.height - margin.top - margin.bottom;
 
@@ -87,6 +87,16 @@ export function StoryChart({
       .attr("height", dimensions.height)
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    // ClipPath to prevent lines from rendering outside the plot area
+    svg.append("defs")
+      .append("clipPath")
+      .attr("id", "story-chart-clip")
+      .append("rect")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("width", width)
+      .attr("height", height);
 
     // Process & normalize data
     const processedSeries = seriesData.map((s) => {
@@ -155,7 +165,7 @@ export function StoryChart({
     // Y-axis label
     g.append("text")
       .attr("transform", "rotate(-90)")
-      .attr("y", -40)
+      .attr("y", -50)
       .attr("x", -height / 2)
       .attr("text-anchor", "middle")
       .attr("font-family", "'IBM Plex Mono', monospace")
@@ -163,7 +173,8 @@ export function StoryChart({
       .attr("fill", "var(--text-muted)")
       .text(`Index (${normalizeYear} = 100)`);
 
-    // Data lines + inline end labels
+    // Data lines (clipped to plot area)
+    const linesGroup = g.append("g").attr("clip-path", "url(#story-chart-clip)");
     processedSeries.forEach((s) => {
       const line = d3
         .line<{ date: string; value: number }>()
@@ -171,27 +182,40 @@ export function StoryChart({
         .y((d) => y(d.value))
         .curve(d3.curveLinear);
 
-      g.append("path")
+      linesGroup.append("path")
         .datum(s.observations)
         .attr("fill", "none")
         .attr("stroke", s.color)
         .attr("stroke-width", 2.5)
         .attr("d", line);
+    });
 
-      // Inline end-of-line label
+    // After computing all label positions, adjust for overlaps
+    const labelPositions = processedSeries.map((s) => {
       const lastObs = s.observations[s.observations.length - 1];
-      if (lastObs) {
-        const lx = x(new Date(lastObs.date));
-        const ly = y(lastObs.value);
-        g.append("text")
-          .attr("x", lx + 8)
-          .attr("y", ly + 4)
-          .attr("font-family", "'IBM Plex Mono', monospace")
-          .attr("font-size", "10px")
-          .attr("font-weight", "600")
-          .attr("fill", s.color)
-          .text(s.name);
+      return lastObs ? { ...s, lx: x(new Date(lastObs.date)), ly: y(lastObs.value) } : null;
+    }).filter(Boolean) as { name: string; color: string; lx: number; ly: number }[];
+
+    // Sort by y position and push apart overlapping labels
+    labelPositions.sort((a, b) => a.ly - b.ly);
+    for (let i = 1; i < labelPositions.length; i++) {
+      const prev = labelPositions[i - 1];
+      const curr = labelPositions[i];
+      if (curr.ly - prev.ly < 14) { // 14px minimum spacing
+        curr.ly = prev.ly + 14;
       }
+    }
+
+    // Draw end-of-line labels at adjusted positions
+    labelPositions.forEach((lp) => {
+      g.append("text")
+        .attr("x", lp.lx + 8)
+        .attr("y", lp.ly + 4)
+        .attr("font-family", "'IBM Plex Mono', monospace")
+        .attr("font-size", "10px")
+        .attr("font-weight", "600")
+        .attr("fill", lp.color)
+        .text(lp.name);
     });
 
     // Law annotation lines

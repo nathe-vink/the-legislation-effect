@@ -11,6 +11,7 @@ const seriesNameMap: Record<string, string> = {
   // Fallbacks for series not in fred-series.json
   FEDFUNDS: "Federal Funds Rate",
   SP500: "S&P 500 Index",
+  INDPRO: "Industrial Production Index",
 };
 for (const group of fredSeriesData.groups) {
   for (const s of group.series) {

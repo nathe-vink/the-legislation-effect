@@ -21,12 +21,6 @@ const LINE_COLORS = [
   "var(--accent-mark)",
 ];
 
-const GOOD_DIRECTION: Record<string, "up" | "down"> = {
-  CPIAUCSL: "down",       // CPI All Items — costs up is bad
-  AHETPI: "up",           // Avg Hourly Earnings — up is good
-  CUSR0000SAH1: "down",   // CPI Housing — costs up is bad
-  CPIMEDSL: "down",       // CPI Medical Care — costs up is bad
-};
 
 interface FredResponse {
   series: { id: string; title: string };
@@ -113,7 +107,7 @@ export default function YourLifePage() {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold mb-2">Your Life</h1>
+      <h1 className="font-mono text-2xl font-bold tracking-wider text-ink-900 uppercase mb-2">Your Life</h1>
       <p className="font-mono text-sm text-ink-600 mb-6">
         Enter your birth year to see the legislation and economic trends of your
         lifetime.
@@ -146,37 +140,57 @@ export default function YourLifePage() {
 
       {submitted && birthYear && (
         <>
-          {/* Summary stats */}
-          {!loading && chartSeries.length > 0 && (
-            <div className="punch-card px-7 py-6 mb-6">
-              <div className="section-label mb-3">
-                Since You Were Born in {birthYear}
+          {/* Summary narrative */}
+          {!loading && chartSeries.length > 0 && (() => {
+            const cpi = getSummary("CPIAUCSL");
+            const wages = getSummary("AHETPI");
+            const housing = getSummary("CUSR0000SAH1");
+            const medical = getSummary("CPIMEDSL");
+
+            const summaryLines: string[] = [];
+            if (cpi && wages) {
+              const realWageGrowth = ((1 + wages.pctChange / 100) / (1 + cpi.pctChange / 100) - 1) * 100;
+              summaryLines.push(
+                realWageGrowth > 5
+                  ? `Average hourly earnings have grown faster than inflation, rising about ${realWageGrowth.toFixed(0)}% in real terms.`
+                  : realWageGrowth > -5
+                  ? `Average hourly earnings have barely kept pace with inflation, ${realWageGrowth > 0 ? "gaining" : "losing"} about ${Math.abs(realWageGrowth).toFixed(0)}% in real terms.`
+                  : `Average hourly earnings have fallen behind inflation, losing about ${Math.abs(realWageGrowth).toFixed(0)}% of their purchasing power.`
+              );
+            }
+            if (cpi && housing) {
+              const realHousingGrowth = ((1 + housing.pctChange / 100) / (1 + cpi.pctChange / 100) - 1) * 100;
+              if (realHousingGrowth > 10) {
+                summaryLines.push(`Housing costs have risen ${realHousingGrowth.toFixed(0)}% faster than general inflation, squeezing household budgets.`);
+              }
+            }
+            if (cpi && medical) {
+              const realMedicalGrowth = ((1 + medical.pctChange / 100) / (1 + cpi.pctChange / 100) - 1) * 100;
+              if (realMedicalGrowth > 10) {
+                summaryLines.push(`Medical care costs have risen ${realMedicalGrowth.toFixed(0)}% faster than general inflation.`);
+              }
+            }
+
+            if (summaryLines.length === 0) return null;
+
+            return (
+              <div className="punch-card px-7 py-6 mb-6">
+                <div className="section-label mb-3">
+                  Since You Were Born in {birthYear}
+                </div>
+                <div className="space-y-3">
+                  {summaryLines.map((line, i) => (
+                    <p key={i} className="font-mono text-sm text-ink-800 leading-relaxed">
+                      {line}
+                    </p>
+                  ))}
+                </div>
+                <div className="mt-4 font-mono text-2xs text-ink-400 italic">
+                  All comparisons are inflation-adjusted using CPI — All Items as the baseline.
+                </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                {KEY_SERIES.map((s) => {
-                  const summary = getSummary(s.id);
-                  if (!summary) return null;
-                  const isUp = summary.pctChange > 0;
-                  const goodDir = GOOD_DIRECTION[s.id] || "up";
-                  const isGood = (goodDir === "up" && isUp) || (goodDir === "down" && !isUp);
-                  return (
-                    <div key={s.id} className="border border-tan-400 rounded-sm p-3 bg-paper-50">
-                      <div className="font-mono text-2xs text-ink-400 uppercase tracking-wide mb-1">
-                        {s.name}
-                      </div>
-                      <div className={`font-condensed text-lg font-bold ${isGood ? "text-semantic-good" : "text-semantic-bad"}`}>
-                        {isUp ? "+" : ""}{summary.pctChange.toFixed(0)}%
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-              <div className="mt-4 font-mono text-2xs text-ink-400 italic">
-                Percentage change from {birthYear} to most recent data available.
-                All values are nominal (not adjusted for inflation) unless the series itself is inflation-adjusted.
-              </div>
-            </div>
-          )}
+            );
+          })()}
 
           {/* Timeline chart */}
           <div className="punch-card px-4 py-4 mb-6">

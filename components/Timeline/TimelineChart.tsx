@@ -110,6 +110,16 @@ export function TimelineChart({
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
+    // ClipPath to prevent lines from rendering outside the plot area
+    svg.append("defs")
+      .append("clipPath")
+      .attr("id", "timeline-chart-clip")
+      .append("rect")
+      .attr("x", 0)
+      .attr("y", 0)
+      .attr("width", width)
+      .attr("height", height);
+
     // Process data
     const processedSeries = series.map((s, i) => {
       const obs = normalized ? normalizeSeries(s.observations, baselineYear) : s.observations;
@@ -218,7 +228,8 @@ export function TimelineChart({
         .text(`Index (${baselineYear} = 100)`);
     }
 
-    // Data lines
+    // Data lines (clipped to plot area)
+    const linesGroup = g.append("g").attr("clip-path", "url(#timeline-chart-clip)");
     processedSeries.forEach((s) => {
       const line = d3
         .line<{ date: string; value: number }>()
@@ -226,7 +237,7 @@ export function TimelineChart({
         .y((d) => y(d.value))
         .curve(d3.curveLinear);
 
-      g.append("path")
+      linesGroup.append("path")
         .datum(s.observations)
         .attr("fill", "none")
         .attr("stroke", s.color)
@@ -301,33 +312,7 @@ export function TimelineChart({
         });
     });
 
-    // Legend
-    if (processedSeries.length > 0) {
-      const legend = g
-        .append("g")
-        .attr("transform", `translate(${width - 10}, 25)`);
-
-      processedSeries.forEach((s, i) => {
-        const row = legend.append("g").attr("transform", `translate(0, ${i * 18})`);
-        row
-          .append("line")
-          .attr("x1", -30)
-          .attr("x2", -10)
-          .attr("y1", 0)
-          .attr("y2", 0)
-          .attr("stroke", s.color)
-          .attr("stroke-width", 2);
-        row
-          .append("text")
-          .attr("x", -35)
-          .attr("y", 4)
-          .attr("text-anchor", "end")
-          .attr("font-family", "'IBM Plex Mono', monospace")
-          .attr("font-size", "9px")
-          .attr("fill", "var(--text-secondary)")
-          .text(s.name);
-      });
-    }
+    // Legend is rendered as HTML below the SVG (see return JSX)
   }, [series, laws, presidents, normalized, baselineYear, dimensions, onLawClick]);
 
   useEffect(() => {
@@ -337,6 +322,15 @@ export function TimelineChart({
   return (
     <div ref={containerRef} className="relative w-full">
       <svg ref={svgRef} className="w-full" />
+      {/* Legend */}
+      <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 px-2">
+        {series.map((s, i) => (
+          <div key={s.id} className="flex items-center gap-1.5">
+            <div className="w-4 h-0.5" style={{ backgroundColor: s.color || LINE_COLORS[i % LINE_COLORS.length] }} />
+            <span className="font-mono text-2xs text-ink-600">{s.name}</span>
+          </div>
+        ))}
+      </div>
       <div
         ref={tooltipRef}
         className="absolute hidden pointer-events-none z-10 max-w-[280px] punch-card px-4 py-3"

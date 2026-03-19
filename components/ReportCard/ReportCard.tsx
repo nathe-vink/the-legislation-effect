@@ -36,7 +36,7 @@ export function ReportCard({
   const year = new Date(law.date + "T12:00:00").getFullYear();
 
   return (
-    <div className="punch-card max-w-[640px] w-full">
+    <div className="punch-card w-full">
       <PunchHoles />
 
       <div className="px-7 pt-2 pb-1">

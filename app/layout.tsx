@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen">
-        <header className="max-w-6xl mx-auto px-4 pt-8 pb-4">
+        <header className="max-w-6xl mx-auto px-4 pt-8 pb-8">
           <nav className="flex items-center justify-between flex-wrap gap-4">
             <a href="/" className="no-underline">
               <span className="font-mono text-2xs tracking-[0.2em] uppercase text-ink-400 block">

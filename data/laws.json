@@ -19,7 +19,7 @@
       { "name": "Willis C. Hawley", "party": "R", "state": "OR", "chamber": "House" },
       { "name": "Reed Smoot", "party": "R", "state": "UT", "chamber": "Senate" }
     ],
-    "relatedFredSeries": ["MANEMP", "SP500"],
+    "relatedFredSeries": ["MANEMP", "INDPRO"],
     "relatedLaws": ["reciprocal-trade-agreements-1934"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Smoot%E2%80%93Hawley_Tariff_Act",
@@ -47,7 +47,7 @@
       { "name": "Carter Glass", "party": "D", "state": "VA", "chamber": "Senate" },
       { "name": "Henry B. Steagall", "party": "D", "state": "AL", "chamber": "House" }
     ],
-    "relatedFredSeries": ["SP500", "MANEMP"],
+    "relatedFredSeries": ["INDPRO", "MANEMP"],
     "relatedLaws": ["gramm-leach-bliley-1999", "dodd-frank-2010"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Glass%E2%80%93Steagall_legislation",
@@ -78,7 +78,7 @@
     "sponsors": [
       { "name": "Henry B. Steagall", "party": "D", "state": "AL", "chamber": "House" }
     ],
-    "relatedFredSeries": ["MANEMP", "SP500"],
+    "relatedFredSeries": ["MANEMP", "INDPRO"],
     "relatedLaws": ["fair-housing-act-1968", "community-reinvestment-act-1977"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/National_Housing_Act_of_1934",
@@ -109,7 +109,7 @@
     "sponsors": [
       { "name": "Cordell Hull", "party": "D", "state": "TN", "chamber": "Senate" }
     ],
-    "relatedFredSeries": ["MANEMP", "SP500"],
+    "relatedFredSeries": ["MANEMP", "INDPRO"],
     "relatedLaws": ["smoot-hawley-1930", "trade-expansion-act-1962"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Reciprocal_Tariff_Act",
@@ -137,7 +137,7 @@
       { "name": "Sam Rayburn", "party": "D", "state": "TX", "chamber": "House" },
       { "name": "Duncan U. Fletcher", "party": "D", "state": "FL", "chamber": "Senate" }
     ],
-    "relatedFredSeries": ["SP500", "MANEMP"],
+    "relatedFredSeries": ["INDPRO", "MANEMP"],
     "relatedLaws": ["glass-steagall-1933", "dodd-frank-2010"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Securities_Exchange_Act_of_1934",
@@ -165,7 +165,7 @@
       { "name": "Robert F. Wagner", "party": "D", "state": "NY", "chamber": "Senate" },
       { "name": "William P. Connery Jr.", "party": "D", "state": "MA", "chamber": "House" }
     ],
-    "relatedFredSeries": ["MANEMP", "SP500"],
+    "relatedFredSeries": ["MANEMP", "INDPRO"],
     "relatedLaws": ["taft-hartley-1947", "landrum-griffin-1959"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/National_Labor_Relations_Act_of_1935",
@@ -193,7 +193,7 @@
       { "name": "Robert F. Wagner", "party": "D", "state": "NY", "chamber": "Senate" },
       { "name": "David J. Lewis", "party": "D", "state": "MD", "chamber": "House" }
     ],
-    "relatedFredSeries": ["MANEMP", "SP500"],
+    "relatedFredSeries": ["MANEMP", "INDPRO"],
     "relatedLaws": ["medicare-medicaid-1965", "welfare-reform-1996"],
     "congressGovUrl": "",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Social_Security_Act",
@@ -953,7 +953,7 @@
       { "name": "Jim Leach", "party": "R", "state": "IA", "chamber": "House" },
       { "name": "Thomas J. Bliley Jr.", "party": "R", "state": "VA", "chamber": "House" }
     ],
-    "relatedFredSeries": ["SP500", "CP", "TDSP"],
+    "relatedFredSeries": ["FEDFUNDS", "CP", "TDSP"],
     "relatedLaws": ["glass-steagall-1933", "commodity-futures-modernization-2000", "dodd-frank-2010"],
     "congressGovUrl": "https://www.congress.gov/bill/106th-congress/senate-bill/900",
     "wikipediaUrl": "https://en.wikipedia.org/wiki/Gramm%E2%80%93Leach%E2%80%93Bliley_Act",

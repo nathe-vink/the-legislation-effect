@@ -62,7 +62,7 @@
     "seriesLabels": { "GINIALLRF": "Gini Index (Inequality)", "CP": "Corporate Profits After Tax", "MEHOINUSA672N": "Median Household Income" },
     "normalizeYear": 1967,
     "lawSlugs": ["revenue-act-1964", "tax-reform-act-1986", "tcja-2017"],
-    "dateRange": ["1967-01-01", "2024-01-01"]
+    "dateRange": ["1964-01-01", "2024-01-01"]
   },
   {
     "id": "the-trade-off",
@@ -70,12 +70,12 @@
     "subtitle": "Cheaper Goods, Fewer Jobs",
     "abstract": "Free trade lowered prices and eliminated millions of manufacturing jobs. Was the trade-off worth it?",
     "narrative": "In 1979, American manufacturing employed 19.6 million people. By 2010, that number had fallen to 11.5 million — a loss of 8.1 million jobs, or 41% of the sector. The steepest drops came in two waves that correspond precisely to two trade agreements: NAFTA (effective 1994) and the grant of Permanent Normal Trade Relations with China (2000).\n\nThe economic argument for free trade is real. Consumer prices fell as cheaper imports flooded in. The CPI for goods like clothing, electronics, and furniture declined in real terms throughout the 2000s. A family shopping at Walmart genuinely paid less. But the communities that manufactured those goods — the factory towns of Ohio, Michigan, North Carolina, Pennsylvania — saw their economic base disappear. The \"China shock\" alone eliminated an estimated 2.4 million American jobs between 1999 and 2011, according to research by economists David Autor, David Dorn, and Gordon Hanson.\n\nThe USMCA (2020) attempted to course-correct, adding stronger labor and environmental provisions than NAFTA had. But by then, the restructuring was complete. Manufacturing employment has stabilized around 12.8 million — but at lower wages and with fewer benefits than the union jobs that preceded them. The trade-off was cheaper consumer goods for the country as a whole, purchased at the price of entire regional economies.",
-    "verdict": "America lost 8 million manufacturing jobs between 1979 and 2010. Consumer goods got cheaper. The communities that made those goods never recovered. Trade policy created winners and losers — and never compensated the losers.",
-    "fredSeries": ["MANEMP", "CPIAUCSL"],
-    "seriesLabels": { "MANEMP": "Manufacturing Employment", "CPIAUCSL": "CPI — All Items" },
-    "normalizeYear": 1947,
+    "verdict": "America lost 8 million manufacturing jobs between 1979 and 2010. Wages stagnated for those who remained. The communities that made those goods never recovered. Trade policy created winners and losers — and never compensated the losers.",
+    "fredSeries": ["MANEMP", "AHETPI"],
+    "seriesLabels": { "MANEMP": "Manufacturing Employment", "AHETPI": "Avg Hourly Earnings" },
+    "normalizeYear": 1964,
     "lawSlugs": ["nafta-1993", "pntr-china-2000", "usmca-2020"],
-    "dateRange": ["1947-01-01", "2024-01-01"]
+    "dateRange": ["1964-01-01", "2024-01-01"]
   },
   {
     "id": "cost-of-learning",

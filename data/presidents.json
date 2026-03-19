@@ -1,0 +1,17 @@
+[
+  { "name": "Truman", "party": "D", "start": "1945-04-12", "end": "1953-01-20" },
+  { "name": "Eisenhower", "party": "R", "start": "1953-01-20", "end": "1961-01-20" },
+  { "name": "Kennedy", "party": "D", "start": "1961-01-20", "end": "1963-11-22" },
+  { "name": "Johnson", "party": "D", "start": "1963-11-22", "end": "1969-01-20" },
+  { "name": "Nixon", "party": "R", "start": "1969-01-20", "end": "1974-08-09" },
+  { "name": "Ford", "party": "R", "start": "1974-08-09", "end": "1977-01-20" },
+  { "name": "Carter", "party": "D", "start": "1977-01-20", "end": "1981-01-20" },
+  { "name": "Reagan", "party": "R", "start": "1981-01-20", "end": "1989-01-20" },
+  { "name": "H.W. Bush", "party": "R", "start": "1989-01-20", "end": "1993-01-20" },
+  { "name": "Clinton", "party": "D", "start": "1993-01-20", "end": "2001-01-20" },
+  { "name": "W. Bush", "party": "R", "start": "2001-01-20", "end": "2009-01-20" },
+  { "name": "Obama", "party": "D", "start": "2009-01-20", "end": "2017-01-20" },
+  { "name": "Trump", "party": "R", "start": "2017-01-20", "end": "2021-01-20" },
+  { "name": "Biden", "party": "D", "start": "2021-01-20", "end": "2025-01-20" },
+  { "name": "Trump", "party": "R", "start": "2025-01-20", "end": "2029-01-20" }
+]

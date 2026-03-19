@@ -1,0 +1,1407 @@
+[
+  {
+    "id": "smoot-hawley-1930",
+    "slug": "smoot-hawley-tariff-act",
+    "name": "Smoot-Hawley Tariff Act",
+    "formalName": "Tariff Act of 1930",
+    "date": "1930-06-17",
+    "type": "legislation",
+    "category": ["trade"],
+    "subcategory": ["tariffs", "protectionism"],
+    "summary": "Raised tariffs on over 20,000 imported goods to record levels, intended to protect American farmers and manufacturers. Trading partners retaliated with their own tariffs, and economists widely credit the act with deepening and prolonging the Great Depression.",
+    "president": { "name": "Herbert Hoover", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 71, "houseControl": "R", "senateControl": "R" },
+    "vote": {
+      "house": { "yea": 264, "nay": 147, "yea_d": 14, "nay_d": 132, "yea_r": 244, "nay_r": 12, "type": "passage" },
+      "senate": { "yea": 44, "nay": 42, "yea_d": 5, "nay_d": 34, "yea_r": 39, "nay_r": 8, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Willis C. Hawley", "party": "R", "state": "OR", "chamber": "House" },
+      { "name": "Reed Smoot", "party": "R", "state": "UT", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["UNRATE", "CPIAUCSL"],
+    "relatedLaws": ["reciprocal-trade-agreements-1934"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Smoot%E2%80%93Hawley_Tariff_Act",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "glass-steagall-1933",
+    "slug": "glass-steagall-act",
+    "name": "Glass-Steagall Act",
+    "formalName": "Banking Act of 1933",
+    "date": "1933-06-16",
+    "type": "legislation",
+    "category": ["finance"],
+    "subcategory": ["banking", "regulation"],
+    "summary": "Separated commercial banking from investment banking, created the FDIC to insure bank deposits, and established regulations to reduce speculation. Enacted in response to the wave of bank failures during the Great Depression.",
+    "president": { "name": "Franklin D. Roosevelt", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 73, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 262, "nay": 19, "yea_d": 209, "nay_d": 5, "yea_r": 53, "nay_r": 14, "type": "passage" },
+      "senate": { "yea": 54, "nay": 9, "yea_d": 43, "nay_d": 2, "yea_r": 11, "nay_r": 7, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Carter Glass", "party": "D", "state": "VA", "chamber": "Senate" },
+      { "name": "Henry B. Steagall", "party": "D", "state": "AL", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["CP", "SP500", "FEDFUNDS"],
+    "relatedLaws": ["gramm-leach-bliley-1999", "dodd-frank-2010"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Glass%E2%80%93Steagall_legislation",
+    "featured": true,
+    "verdict": "Between 1933 and 1999 — the 66 years Glass-Steagall was in effect — the US experienced zero systemic banking crises. In the decade after its repeal, the financial sector consolidated rapidly and produced the worst financial crisis since the Great Depression.",
+    "verdictMetrics": [
+      { "label": "Major banking crises (1933-1999)", "before": "Frequent (pre-1933)", "after": "0 systemic crises", "change": "-100%" },
+      { "label": "Bank failures (1934-1980)", "before": "9,000+ (1930-33)", "after": "Avg ~7/year", "change": "-99%" },
+      { "label": "Years to next systemic crisis", "before": "N/A", "after": "9 years after repeal (2008)", "change": "66 yrs of stability" }
+    ]
+  },
+  {
+    "id": "national-housing-act-1934",
+    "slug": "national-housing-act-1934",
+    "name": "National Housing Act of 1934",
+    "formalName": "National Housing Act",
+    "date": "1934-06-27",
+    "type": "legislation",
+    "category": ["housing"],
+    "subcategory": ["mortgage", "homeownership"],
+    "summary": "Created the Federal Housing Administration (FHA) to insure mortgage loans, making homeownership accessible to millions by reducing down payment requirements and extending loan terms. Established the framework for the modern American mortgage market.",
+    "president": { "name": "Franklin D. Roosevelt", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 73, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 380, "nay": 12, "yea_d": 285, "nay_d": 4, "yea_r": 95, "nay_r": 8, "type": "passage" },
+      "senate": { "yea": 72, "nay": 4, "yea_d": 54, "nay_d": 2, "yea_r": 18, "nay_r": 2, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Henry B. Steagall", "party": "D", "state": "AL", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["USSTHPI", "RHORUSQ156N", "MORTGAGE30US"],
+    "relatedLaws": ["fair-housing-act-1968", "community-reinvestment-act-1977"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/National_Housing_Act_of_1934",
+    "featured": true,
+    "verdict": "The homeownership rate rose from 44% in 1934 to 62% by 1960 as FHA-insured mortgages made the 30-year fixed-rate loan standard. But FHA underwriting maps systematically denied loans in Black neighborhoods, entrenching residential segregation and a racial wealth gap that persists: white family median wealth reached 6x that of Black families.",
+    "verdictMetrics": [
+      { "label": "Homeownership rate", "before": "44% (1934)", "after": "62% (1960)", "change": "+41%" },
+      { "label": "Avg mortgage term", "before": "5-10 years, 50% down", "after": "30 years, 10% down", "change": "Transformed" },
+      { "label": "White-to-Black wealth ratio", "before": "N/A (1934)", "after": "6:1 (2023)", "change": "Persistent gap" }
+    ]
+  },
+  {
+    "id": "reciprocal-trade-agreements-1934",
+    "slug": "reciprocal-trade-agreements-1934",
+    "name": "Reciprocal Trade Agreements Act",
+    "formalName": "Reciprocal Trade Agreements Act of 1934",
+    "date": "1934-06-12",
+    "type": "legislation",
+    "category": ["trade"],
+    "subcategory": ["tariffs", "trade-liberalization"],
+    "summary": "Authorized the president to negotiate bilateral tariff reductions of up to 50% without congressional approval for each deal. Reversed the protectionist direction of Smoot-Hawley and laid the groundwork for the postwar multilateral trade system.",
+    "president": { "name": "Franklin D. Roosevelt", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 73, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 274, "nay": 111, "yea_d": 269, "nay_d": 11, "yea_r": 2, "nay_r": 99, "type": "passage" },
+      "senate": { "yea": 57, "nay": 33, "yea_d": 51, "nay_d": 5, "yea_r": 5, "nay_r": 28, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Cordell Hull", "party": "D", "state": "TN", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["UNRATE", "CPIAUCSL"],
+    "relatedLaws": ["smoot-hawley-1930", "trade-expansion-act-1962"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Reciprocal_Tariff_Act",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "securities-exchange-act-1934",
+    "slug": "securities-exchange-act-1934",
+    "name": "Securities Exchange Act of 1934",
+    "formalName": "Securities Exchange Act of 1934",
+    "date": "1934-06-06",
+    "type": "legislation",
+    "category": ["finance"],
+    "subcategory": ["securities", "regulation"],
+    "summary": "Created the Securities and Exchange Commission (SEC) to regulate stock exchanges, brokers, and publicly traded companies. Required periodic financial disclosure by public companies and prohibited various forms of market manipulation and insider trading.",
+    "president": { "name": "Franklin D. Roosevelt", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 73, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 281, "nay": 84, "yea_d": 237, "nay_d": 10, "yea_r": 42, "nay_r": 72, "type": "passage" },
+      "senate": { "yea": 62, "nay": 13, "yea_d": 49, "nay_d": 2, "yea_r": 13, "nay_r": 11, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Sam Rayburn", "party": "D", "state": "TX", "chamber": "House" },
+      { "name": "Duncan U. Fletcher", "party": "D", "state": "FL", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["CP", "CPIAUCSL"],
+    "relatedLaws": ["glass-steagall-1933", "dodd-frank-2010"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Securities_Exchange_Act_of_1934",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "wagner-act-1935",
+    "slug": "wagner-act-1935",
+    "name": "Wagner Act",
+    "formalName": "National Labor Relations Act of 1935",
+    "date": "1935-07-05",
+    "type": "legislation",
+    "category": ["labor"],
+    "subcategory": ["unions", "collective-bargaining"],
+    "summary": "Guaranteed workers the right to organize into unions, engage in collective bargaining, and take collective action including strikes. Created the National Labor Relations Board (NLRB) to enforce these rights and investigate unfair labor practices by employers.",
+    "president": { "name": "Franklin D. Roosevelt", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 74, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 199, "nay": 19, "yea_d": 185, "nay_d": 7, "yea_r": 14, "nay_r": 12, "type": "passage" },
+      "senate": { "yea": 63, "nay": 12, "yea_d": 52, "nay_d": 2, "yea_r": 11, "nay_r": 10, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Robert F. Wagner", "party": "D", "state": "NY", "chamber": "Senate" },
+      { "name": "William P. Connery Jr.", "party": "D", "state": "MA", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["MANEMP", "AHETPI", "PRS85006173"],
+    "relatedLaws": ["taft-hartley-1947", "landrum-griffin-1959"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/National_Labor_Relations_Act_of_1935",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "social-security-act-1935",
+    "slug": "social-security-act-1935",
+    "name": "Social Security Act",
+    "formalName": "Social Security Act of 1935",
+    "date": "1935-08-14",
+    "type": "legislation",
+    "category": ["safety-net"],
+    "subcategory": ["retirement", "insurance"],
+    "summary": "Established the Social Security system providing old-age retirement benefits funded by payroll taxes, as well as unemployment insurance and aid to dependent children. Created the foundational safety net program that remains the largest source of retirement income for most Americans.",
+    "president": { "name": "Franklin D. Roosevelt", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 74, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 372, "nay": 33, "yea_d": 284, "nay_d": 13, "yea_r": 81, "nay_r": 15, "type": "passage" },
+      "senate": { "yea": 77, "nay": 6, "yea_d": 60, "nay_d": 1, "yea_r": 16, "nay_r": 5, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Robert F. Wagner", "party": "D", "state": "NY", "chamber": "Senate" },
+      { "name": "David J. Lewis", "party": "D", "state": "MD", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["MEHOINUSA672N", "CIVPART", "CPIAUCSL"],
+    "relatedLaws": ["medicare-medicaid-1965", "welfare-reform-1996"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Social_Security_Act",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "fair-labor-standards-act-1938",
+    "slug": "fair-labor-standards-act-1938",
+    "name": "Fair Labor Standards Act",
+    "formalName": "Fair Labor Standards Act of 1938",
+    "date": "1938-06-25",
+    "type": "legislation",
+    "category": ["labor"],
+    "subcategory": ["minimum-wage", "overtime"],
+    "summary": "Established the first federal minimum wage (25 cents/hour), set the standard 40-hour work week, required overtime pay at time-and-a-half, and banned most child labor. Covered roughly 20% of the labor force at passage, with coverage expanding through subsequent amendments.",
+    "president": { "name": "Franklin D. Roosevelt", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 75, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 314, "nay": 97, "yea_d": 252, "nay_d": 52, "yea_r": 62, "nay_r": 45, "type": "passage" },
+      "senate": { "yea": 56, "nay": 28, "yea_d": 49, "nay_d": 17, "yea_r": 7, "nay_r": 11, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Hugo Black", "party": "D", "state": "AL", "chamber": "Senate" },
+      { "name": "William P. Connery Jr.", "party": "D", "state": "MA", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["FEDMINNFRWG", "AHETPI", "UNRATE"],
+    "relatedLaws": ["wagner-act-1935", "taft-hartley-1947"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Fair_Labor_Standards_Act_of_1938",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "gi-bill-1944",
+    "slug": "gi-bill-1944",
+    "name": "GI Bill",
+    "formalName": "Servicemen's Readjustment Act of 1944",
+    "date": "1944-06-22",
+    "type": "legislation",
+    "category": ["safety-net"],
+    "subcategory": ["education", "veterans", "housing"],
+    "summary": "Provided returning World War II veterans with tuition and living expenses for college or vocational training, low-cost mortgages, and unemployment benefits. Nearly 8 million veterans used the education benefits, transforming American higher education and the middle class.",
+    "president": { "name": "Franklin D. Roosevelt", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 78, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 387, "nay": 0, "yea_d": 222, "nay_d": 0, "yea_r": 165, "nay_r": 0, "type": "passage" },
+      "senate": { "yea": 50, "nay": 0, "yea_d": 35, "nay_d": 0, "yea_r": 15, "nay_r": 0, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "John E. Rankin", "party": "D", "state": "MS", "chamber": "House" },
+      { "name": "Ernest McFarland", "party": "D", "state": "AZ", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["CUSR0000SEEB", "RHORUSQ156N", "MEHOINUSA672N"],
+    "relatedLaws": ["national-housing-act-1934", "civil-rights-act-1964"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/G.I._Bill",
+    "featured": true,
+    "verdict": "Nearly 8 million veterans used the education benefits, and 2.4 million used the home loan guarantees. The college-educated share of the population doubled from 5% to 10% between 1945 and 1960. Homeownership surged from 44% to 62%. The bill is credited with building the postwar middle class — though Black veterans were systematically steered away from benefits by local administrators.",
+    "verdictMetrics": [
+      { "label": "Veterans using education benefit", "before": "N/A", "after": "7.8 million", "change": "7.8M educated" },
+      { "label": "Homeownership rate", "before": "44% (1940)", "after": "62% (1960)", "change": "+41%" },
+      { "label": "College-educated adults", "before": "5% (1945)", "after": "10% (1960)", "change": "+100%" }
+    ]
+  },
+  {
+    "id": "taft-hartley-1947",
+    "slug": "taft-hartley-act",
+    "name": "Taft-Hartley Act",
+    "formalName": "Labor Management Relations Act of 1947",
+    "date": "1947-06-23",
+    "type": "legislation",
+    "category": ["labor"],
+    "subcategory": ["unions", "collective-bargaining"],
+    "summary": "Restricted union power by banning closed shops, allowing states to pass right-to-work laws, and authorizing presidential injunctions against strikes threatening national security. Amended the pro-union Wagner Act of 1935.",
+    "president": { "name": "Harry S. Truman", "party": "D", "action": "VETOED", "overridden": true },
+    "congress": { "number": 80, "houseControl": "R", "senateControl": "R" },
+    "vote": {
+      "house": { "yea": 331, "nay": 83, "yea_d": 106, "nay_d": 71, "yea_r": 225, "nay_r": 12, "type": "veto override" },
+      "senate": { "yea": 68, "nay": 25, "yea_d": 20, "nay_d": 22, "yea_r": 48, "nay_r": 3, "type": "veto override" }
+    },
+    "sponsors": [
+      { "name": "Robert A. Taft", "party": "R", "state": "OH", "chamber": "Senate" },
+      { "name": "Fred A. Hartley Jr.", "party": "R", "state": "NJ", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["MANEMP", "AHETPI", "OPHNFB"],
+    "relatedLaws": ["wagner-act-1935", "landrum-griffin-1959"],
+    "congressGovUrl": "https://www.congress.gov/bill/80th-congress/house-bill/3020",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Taft%E2%80%93Hartley_Act",
+    "featured": true,
+    "verdict": "Union membership fell from 33% of workers in 1947 to under 10% by 2023. States that adopted Taft-Hartley right-to-work laws saw wages grow 3.1% slower annually than non-right-to-work states. The productivity-pay gap — where output kept rising but wages flatlined — opened within a decade of passage.",
+    "verdictMetrics": [
+      { "label": "Union membership", "before": "33% (1947)", "after": "10% (2023)", "change": "-70%" },
+      { "label": "Wage-productivity gap", "before": "Tracking together (1947)", "after": "64% divergence (2023)", "change": "+64 pts" },
+      { "label": "Right-to-work states", "before": "0 (1947)", "after": "27 (2023)", "change": "+27 states" }
+    ]
+  },
+  {
+    "id": "bank-holding-company-act-1956",
+    "slug": "bank-holding-company-act-1956",
+    "name": "Bank Holding Company Act",
+    "formalName": "Bank Holding Company Act of 1956",
+    "date": "1956-05-09",
+    "type": "legislation",
+    "category": ["finance"],
+    "subcategory": ["banking", "regulation"],
+    "summary": "Regulated the expansion of bank holding companies by requiring Federal Reserve approval for acquisitions and prohibiting bank holding companies from engaging in non-banking activities. Prevented interstate banking consolidation for decades until later amendments relaxed restrictions.",
+    "president": { "name": "Dwight D. Eisenhower", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 84, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 371, "nay": 24, "yea_d": 210, "nay_d": 12, "yea_r": 161, "nay_r": 12, "type": "passage" },
+      "senate": { "yea": 77, "nay": 5, "yea_d": 44, "nay_d": 2, "yea_r": 33, "nay_r": 3, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "A. Willis Robertson", "party": "D", "state": "VA", "chamber": "Senate" },
+      { "name": "Brent Spence", "party": "D", "state": "KY", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["CP", "CPIAUCSL"],
+    "relatedLaws": ["glass-steagall-1933", "gramm-leach-bliley-1999"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Bank_Holding_Company_Act_of_1956",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "landrum-griffin-1959",
+    "slug": "landrum-griffin-1959",
+    "name": "Landrum-Griffin Act",
+    "formalName": "Labor-Management Reporting and Disclosure Act of 1959",
+    "date": "1959-09-14",
+    "type": "legislation",
+    "category": ["labor"],
+    "subcategory": ["unions", "transparency"],
+    "summary": "Imposed reporting requirements on unions' internal affairs, established a bill of rights for union members, and regulated union elections and finances. Enacted after congressional investigations exposed corruption in the Teamsters and other unions.",
+    "president": { "name": "Dwight D. Eisenhower", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 86, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 352, "nay": 52, "yea_d": 190, "nay_d": 47, "yea_r": 162, "nay_r": 5, "type": "passage" },
+      "senate": { "yea": 95, "nay": 2, "yea_d": 62, "nay_d": 2, "yea_r": 33, "nay_r": 0, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Phil M. Landrum", "party": "D", "state": "GA", "chamber": "House" },
+      { "name": "Robert P. Griffin", "party": "R", "state": "MI", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["MANEMP", "AHETPI", "OPHNFB"],
+    "relatedLaws": ["wagner-act-1935", "taft-hartley-1947"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Labor_Management_Reporting_and_Disclosure_Act",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "trade-expansion-act-1962",
+    "slug": "trade-expansion-act-1962",
+    "name": "Trade Expansion Act of 1962",
+    "formalName": "Trade Expansion Act of 1962",
+    "date": "1962-10-11",
+    "type": "legislation",
+    "category": ["trade"],
+    "subcategory": ["tariffs", "trade-liberalization"],
+    "summary": "Granted the president broad authority to negotiate tariff reductions of up to 50% and to eliminate tariffs on categories where the US and EEC together accounted for 80% of world trade. Authorized the Kennedy Round of GATT negotiations and established trade adjustment assistance for displaced workers.",
+    "president": { "name": "John F. Kennedy", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 87, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 298, "nay": 125, "yea_d": 218, "nay_d": 38, "yea_r": 80, "nay_r": 87, "type": "passage" },
+      "senate": { "yea": 78, "nay": 8, "yea_d": 56, "nay_d": 5, "yea_r": 22, "nay_r": 3, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Wilbur Mills", "party": "D", "state": "AR", "chamber": "House" },
+      { "name": "Harry F. Byrd", "party": "D", "state": "VA", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["UNRATE", "CPIAUCSL", "OPHNFB"],
+    "relatedLaws": ["reciprocal-trade-agreements-1934", "trade-act-1974"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Trade_Expansion_Act_of_1962",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "revenue-act-1964",
+    "slug": "revenue-act-1964",
+    "name": "Revenue Act of 1964",
+    "formalName": "Revenue Act of 1964",
+    "date": "1964-02-26",
+    "type": "legislation",
+    "category": ["tax"],
+    "subcategory": ["income-tax", "tax-cuts"],
+    "summary": "Cut individual income tax rates across the board, reducing the top marginal rate from 91% to 70% and the bottom rate from 20% to 14%. Also reduced corporate tax rates. Proposed by Kennedy and signed by Johnson, it was a landmark application of Keynesian fiscal stimulus.",
+    "president": { "name": "Lyndon B. Johnson", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 88, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 326, "nay": 83, "yea_d": 223, "nay_d": 29, "yea_r": 103, "nay_r": 54, "type": "passage" },
+      "senate": { "yea": 77, "nay": 21, "yea_d": 56, "nay_d": 11, "yea_r": 21, "nay_r": 10, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Wilbur Mills", "party": "D", "state": "AR", "chamber": "House" },
+      { "name": "Harry F. Byrd", "party": "D", "state": "VA", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["MEHOINUSA672N", "CP", "GINIALLRF", "UNRATE"],
+    "relatedLaws": ["tax-reform-act-1986", "egtrra-2001"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Revenue_Act_of_1964",
+    "featured": true,
+    "verdict": "Real GDP grew at a 5.8% annual rate in 1964-1966, unemployment fell from 5.2% to 3.8%, and federal revenues actually increased as the economy expanded. It was the textbook demonstration of demand-side tax stimulus. The top rate fell from 91% to 70% — still far higher than any rate since 1986.",
+    "verdictMetrics": [
+      { "label": "Real GDP growth (1964-66)", "before": "4.4% (1963)", "after": "5.8% avg (1964-66)", "change": "+1.4 pts" },
+      { "label": "Unemployment rate", "before": "5.2% (1964)", "after": "3.8% (1966)", "change": "-1.4 pts" },
+      { "label": "Top marginal tax rate", "before": "91%", "after": "70%", "change": "-23%" }
+    ]
+  },
+  {
+    "id": "civil-rights-act-1964",
+    "slug": "civil-rights-act-1964",
+    "name": "Civil Rights Act of 1964",
+    "formalName": "Civil Rights Act of 1964",
+    "date": "1964-07-02",
+    "type": "legislation",
+    "category": ["safety-net"],
+    "subcategory": ["civil-rights", "employment"],
+    "summary": "Outlawed discrimination based on race, color, religion, sex, or national origin in employment, public accommodations, and federally funded programs. Title VII created the Equal Employment Opportunity Commission to enforce workplace anti-discrimination provisions.",
+    "president": { "name": "Lyndon B. Johnson", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 88, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 290, "nay": 130, "yea_d": 153, "nay_d": 91, "yea_r": 136, "nay_r": 35, "type": "passage" },
+      "senate": { "yea": 73, "nay": 27, "yea_d": 46, "nay_d": 21, "yea_r": 27, "nay_r": 6, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Emanuel Celler", "party": "D", "state": "NY", "chamber": "House" },
+      { "name": "Warren Magnuson", "party": "D", "state": "WA", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["MEHOINUSA672N", "GINIALLRF", "CIVPART", "UNRATE"],
+    "relatedLaws": ["fair-housing-act-1968", "welfare-reform-1996"],
+    "congressGovUrl": "https://www.congress.gov/bill/88th-congress/house-bill/7152",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Civil_Rights_Act_of_1964",
+    "featured": true,
+    "verdict": "The Black-white income ratio rose from 55% in 1964 to 73% by 1975 — the fastest convergence in American history. Black college enrollment doubled within a decade. Labor force participation among Black men rose significantly. Occupational segregation, measured by the Duncan index, fell by a third between 1960 and 1980.",
+    "verdictMetrics": [
+      { "label": "Black-white income ratio", "before": "55% (1964)", "after": "73% (1975)", "change": "+18 pts" },
+      { "label": "Black college enrollment", "before": "340,000 (1964)", "after": "718,000 (1974)", "change": "+111%" },
+      { "label": "Occupational segregation index", "before": "45 (1960)", "after": "30 (1980)", "change": "-33%" }
+    ]
+  },
+  {
+    "id": "medicare-medicaid-1965",
+    "slug": "medicare-medicaid-1965",
+    "name": "Medicare and Medicaid",
+    "formalName": "Social Security Amendments of 1965",
+    "date": "1965-07-30",
+    "type": "legislation",
+    "category": ["healthcare"],
+    "subcategory": ["insurance", "elderly", "poverty"],
+    "summary": "Created Medicare (health insurance for Americans 65 and older) and Medicaid (health coverage for low-income individuals). Medicare Part A covers hospital insurance funded by payroll taxes; Part B covers outpatient services. Together they became the largest government health programs in US history.",
+    "president": { "name": "Lyndon B. Johnson", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 89, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 307, "nay": 116, "yea_d": 237, "nay_d": 48, "yea_r": 70, "nay_r": 68, "type": "passage" },
+      "senate": { "yea": 68, "nay": 21, "yea_d": 57, "nay_d": 7, "yea_r": 13, "nay_r": 14, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Wilbur Mills", "party": "D", "state": "AR", "chamber": "House" },
+      { "name": "Clinton P. Anderson", "party": "D", "state": "NM", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["CPIMEDSL", "CPIAUCSL", "MEHOINUSA672N"],
+    "relatedLaws": ["social-security-act-1935", "affordable-care-act"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Social_Security_Amendments_of_1965",
+    "featured": true,
+    "verdict": "Uninsured rate among seniors dropped from 48% in 1965 to under 2% within a decade. Life expectancy at 65 rose from 14.6 to 19.4 years. But healthcare spending exploded from 5% of GDP in 1965 to 17.6% by 2023, with Medicare and Medicaid now comprising 25% of the federal budget.",
+    "verdictMetrics": [
+      { "label": "Uninsured seniors", "before": "48% (1965)", "after": "<2% (1975)", "change": "-96%" },
+      { "label": "Healthcare % of GDP", "before": "5% (1965)", "after": "17.6% (2023)", "change": "+252%" },
+      { "label": "Life expectancy at 65", "before": "14.6 years (1965)", "after": "19.4 years (2023)", "change": "+33%" }
+    ]
+  },
+  {
+    "id": "fair-housing-act-1968",
+    "slug": "fair-housing-act-1968",
+    "name": "Fair Housing Act",
+    "formalName": "Civil Rights Act of 1968, Title VIII",
+    "date": "1968-04-11",
+    "type": "legislation",
+    "category": ["housing"],
+    "subcategory": ["civil-rights", "discrimination"],
+    "summary": "Prohibited discrimination in the sale, rental, and financing of housing based on race, color, religion, sex, or national origin. Passed in the wake of Martin Luther King Jr.'s assassination, it aimed to end the widespread practice of redlining and segregated housing markets.",
+    "president": { "name": "Lyndon B. Johnson", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 90, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 250, "nay": 172, "yea_d": 150, "nay_d": 88, "yea_r": 100, "nay_r": 84, "type": "passage" },
+      "senate": { "yea": 71, "nay": 20, "yea_d": 42, "nay_d": 17, "yea_r": 29, "nay_r": 3, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Walter Mondale", "party": "D", "state": "MN", "chamber": "Senate" },
+      { "name": "Edward Brooke", "party": "R", "state": "MA", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["RHORUSQ156N", "USSTHPI", "CUSR0000SAH1"],
+    "relatedLaws": ["national-housing-act-1934", "community-reinvestment-act-1977", "civil-rights-act-1964"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Fair_Housing_Act",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "osha-act-1970",
+    "slug": "osha-act-1970",
+    "name": "OSHA Act",
+    "formalName": "Occupational Safety and Health Act of 1970",
+    "date": "1970-12-29",
+    "type": "legislation",
+    "category": ["labor"],
+    "subcategory": ["workplace-safety", "regulation"],
+    "summary": "Created the Occupational Safety and Health Administration (OSHA) to set and enforce workplace safety and health standards. Established workers' right to a safe workplace and required employers to comply with federal safety regulations or face penalties.",
+    "president": { "name": "Richard Nixon", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 91, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 383, "nay": 5, "yea_d": 228, "nay_d": 2, "yea_r": 155, "nay_r": 3, "type": "conference report" },
+      "senate": { "yea": 83, "nay": 3, "yea_d": 52, "nay_d": 1, "yea_r": 31, "nay_r": 2, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Harrison A. Williams", "party": "D", "state": "NJ", "chamber": "Senate" },
+      { "name": "William A. Steiger", "party": "R", "state": "WI", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["AHETPI", "OPHNFB", "CIVPART"],
+    "relatedLaws": ["fair-labor-standards-act-1938", "wagner-act-1935"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Occupational_Safety_and_Health_Act_(United_States)",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "feca-1971",
+    "slug": "feca-1971",
+    "name": "Federal Election Campaign Act",
+    "formalName": "Federal Election Campaign Act of 1971",
+    "date": "1972-02-07",
+    "type": "legislation",
+    "category": ["campaign-finance"],
+    "subcategory": ["disclosure", "contribution-limits"],
+    "summary": "Required full disclosure of federal campaign contributions and expenditures, and limited spending on media advertising. Subsequent 1974 amendments created the Federal Election Commission, established contribution limits, and created the presidential public financing system.",
+    "president": { "name": "Richard Nixon", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 92, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 334, "nay": 20, "yea_d": 205, "nay_d": 12, "yea_r": 129, "nay_r": 8, "type": "passage" },
+      "senate": { "yea": 88, "nay": 2, "yea_d": 51, "nay_d": 1, "yea_r": 37, "nay_r": 1, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Howard Cannon", "party": "D", "state": "NV", "chamber": "Senate" },
+      { "name": "Wayne Hays", "party": "D", "state": "OH", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["CP", "CPIAUCSL"],
+    "relatedLaws": ["buckley-v-valeo-1976", "mccain-feingold-2002", "citizens-united-v-fec"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Federal_Election_Campaign_Act",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "erisa-1974",
+    "slug": "erisa-1974",
+    "name": "ERISA",
+    "formalName": "Employee Retirement Income Security Act of 1974",
+    "date": "1974-09-02",
+    "type": "legislation",
+    "category": ["healthcare"],
+    "subcategory": ["pensions", "benefits"],
+    "summary": "Set minimum standards for private-sector pension and health plans to protect participants and beneficiaries. Created the Pension Benefit Guaranty Corporation to insure defined-benefit pensions and established fiduciary responsibilities for plan administrators.",
+    "president": { "name": "Gerald Ford", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 93, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 407, "nay": 2, "yea_d": 237, "nay_d": 1, "yea_r": 170, "nay_r": 1, "type": "conference report" },
+      "senate": { "yea": 85, "nay": 0, "yea_d": 52, "nay_d": 0, "yea_r": 33, "nay_r": 0, "type": "conference report" }
+    },
+    "sponsors": [
+      { "name": "Harrison A. Williams", "party": "D", "state": "NJ", "chamber": "Senate" },
+      { "name": "John H. Dent", "party": "D", "state": "PA", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["CPIMEDSL", "MEHOINUSA672N", "AHETPI"],
+    "relatedLaws": ["affordable-care-act", "cobra-1985"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Employee_Retirement_Income_Security_Act",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "trade-act-1974",
+    "slug": "trade-act-1974",
+    "name": "Trade Act of 1974",
+    "formalName": "Trade Act of 1974",
+    "date": "1975-01-03",
+    "type": "legislation",
+    "category": ["trade"],
+    "subcategory": ["tariffs", "trade-authority"],
+    "summary": "Granted the president authority to negotiate trade agreements and created the \"fast track\" procedure for congressional approval. Established Section 301, giving the president power to retaliate against unfair foreign trade practices, and expanded trade adjustment assistance for displaced workers.",
+    "president": { "name": "Gerald Ford", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 93, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 323, "nay": 36, "yea_d": 205, "nay_d": 20, "yea_r": 118, "nay_r": 16, "type": "passage" },
+      "senate": { "yea": 77, "nay": 4, "yea_d": 48, "nay_d": 3, "yea_r": 29, "nay_r": 1, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Wilbur Mills", "party": "D", "state": "AR", "chamber": "House" },
+      { "name": "Russell Long", "party": "D", "state": "LA", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["UNRATE", "OPHNFB", "CIVPART"],
+    "relatedLaws": ["trade-expansion-act-1962", "nafta-1993", "usmca-2020"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Trade_Act_of_1974",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "buckley-v-valeo-1976",
+    "slug": "buckley-v-valeo-1976",
+    "name": "Buckley v. Valeo",
+    "formalName": "Buckley v. Valeo, 424 U.S. 1 (1976)",
+    "date": "1976-01-30",
+    "type": "court_decision",
+    "category": ["campaign-finance"],
+    "subcategory": ["first-amendment", "spending-limits"],
+    "summary": "Supreme Court upheld contribution limits to political campaigns but struck down expenditure limits as unconstitutional restrictions on free speech. Established the framework that money spent on political communication is protected speech under the First Amendment.",
+    "president": { "name": "Gerald Ford", "party": "R", "action": "N/A", "overridden": false },
+    "congress": { "number": 94, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "court": { "majority": 7, "dissent": 1, "opinion": "Per Curiam", "dissentBy": "White (partial)" }
+    },
+    "sponsors": [
+      { "name": "Per Curiam", "party": "", "state": "", "chamber": "Majority Opinion" }
+    ],
+    "relatedFredSeries": ["CP", "CPIAUCSL"],
+    "relatedLaws": ["feca-1971", "mccain-feingold-2002", "citizens-united-v-fec"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Buckley_v._Valeo",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "community-reinvestment-act-1977",
+    "slug": "community-reinvestment-act-1977",
+    "name": "Community Reinvestment Act",
+    "formalName": "Community Reinvestment Act of 1977",
+    "date": "1977-10-12",
+    "type": "legislation",
+    "category": ["housing"],
+    "subcategory": ["lending", "community-development"],
+    "summary": "Required banks and thrifts to meet the credit needs of the communities where they are chartered, including low- and moderate-income neighborhoods. Regulators evaluate CRA compliance when banks seek to merge, expand, or open new branches.",
+    "president": { "name": "Jimmy Carter", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 95, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 372, "nay": 9, "yea_d": 255, "nay_d": 2, "yea_r": 117, "nay_r": 7, "type": "passage" },
+      "senate": { "yea": 87, "nay": 0, "yea_d": 55, "nay_d": 0, "yea_r": 32, "nay_r": 0, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "William Proxmire", "party": "D", "state": "WI", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["RHORUSQ156N", "USSTHPI", "MORTGAGE30US"],
+    "relatedLaws": ["national-housing-act-1934", "fair-housing-act-1968", "hera-2008"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Community_Reinvestment_Act",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "didmca-1980",
+    "slug": "didmca-1980",
+    "name": "DIDMCA",
+    "formalName": "Depository Institutions Deregulation and Monetary Control Act of 1980",
+    "date": "1980-03-31",
+    "type": "legislation",
+    "category": ["finance"],
+    "subcategory": ["banking", "deregulation"],
+    "summary": "Phased out interest rate ceilings on deposits (Regulation Q), raised FDIC insurance from $40,000 to $100,000 per account, and allowed thrifts to offer checking accounts and make commercial loans. Began the era of banking deregulation that continued through the 1980s and 1990s.",
+    "president": { "name": "Jimmy Carter", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 96, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 380, "nay": 13, "yea_d": 243, "nay_d": 7, "yea_r": 137, "nay_r": 6, "type": "conference report" },
+      "senate": { "yea": 76, "nay": 9, "yea_d": 46, "nay_d": 5, "yea_r": 30, "nay_r": 4, "type": "conference report" }
+    },
+    "sponsors": [
+      { "name": "Fernand St Germain", "party": "D", "state": "RI", "chamber": "House" },
+      { "name": "William Proxmire", "party": "D", "state": "WI", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["MORTGAGE30US", "TDSP", "CP"],
+    "relatedLaws": ["glass-steagall-1933", "garn-st-germain-1982", "gramm-leach-bliley-1999"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Depository_Institutions_Deregulation_and_Monetary_Control_Act",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "patco-firing-1981",
+    "slug": "patco-firing-1981",
+    "name": "PATCO Strike & Firing",
+    "formalName": "Termination of PATCO Strikers (Executive Action)",
+    "date": "1981-08-05",
+    "type": "executive_action",
+    "category": ["labor"],
+    "subcategory": ["unions", "strikes"],
+    "summary": "President Reagan fired 11,345 striking air traffic controllers who refused to return to work within 48 hours and banned them from federal service for life. The action signaled a harder line against organized labor and is widely seen as a turning point in the decline of union power in the United States.",
+    "president": { "name": "Ronald Reagan", "party": "R", "action": "N/A", "overridden": false },
+    "congress": { "number": 97, "houseControl": "D", "senateControl": "R" },
+    "vote": {},
+    "sponsors": [],
+    "relatedFredSeries": ["MANEMP", "AHETPI", "PRS85006173", "OPHNFB"],
+    "relatedLaws": ["taft-hartley-1947", "wagner-act-1935"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Professional_Air_Traffic_Controllers_Organization_(1968)",
+    "featured": true,
+    "verdict": "In the five years following the PATCO firing, private-sector employers launched an unprecedented wave of permanent replacement during strikes. Strike activity collapsed from 187 major work stoppages in 1980 to just 11 by 2010. Real average hourly earnings did not return to their 1973 peak until 2019.",
+    "verdictMetrics": [
+      { "label": "Major work stoppages/year", "before": "187 (1980)", "after": "11 (2010)", "change": "-94%" },
+      { "label": "Private-sector union rate", "before": "20% (1981)", "after": "6% (2023)", "change": "-70%" },
+      { "label": "Real average hourly earnings", "before": "Peak $23.68 (1973, 2023$)", "after": "Flat through 2019", "change": "0% over 46 years" }
+    ]
+  },
+  {
+    "id": "garn-st-germain-1982",
+    "slug": "garn-st-germain-1982",
+    "name": "Garn-St. Germain Act",
+    "formalName": "Garn-St. Germain Depository Institutions Act of 1982",
+    "date": "1982-10-15",
+    "type": "legislation",
+    "category": ["finance"],
+    "subcategory": ["banking", "deregulation"],
+    "summary": "Deregulated the savings and loan industry by allowing thrifts to make commercial loans and invest in corporate debt. Eliminated interest rate differentials between banks and thrifts. Widely cited as a contributing factor to the savings and loan crisis of the late 1980s.",
+    "president": { "name": "Ronald Reagan", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 97, "houseControl": "D", "senateControl": "R" },
+    "vote": {
+      "house": { "yea": 272, "nay": 91, "yea_d": 131, "nay_d": 77, "yea_r": 141, "nay_r": 14, "type": "passage" },
+      "senate": { "yea": 74, "nay": 19, "yea_d": 28, "nay_d": 16, "yea_r": 46, "nay_r": 3, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Jake Garn", "party": "R", "state": "UT", "chamber": "Senate" },
+      { "name": "Fernand St Germain", "party": "D", "state": "RI", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["MORTGAGE30US", "USSTHPI", "TDSP"],
+    "relatedLaws": ["didmca-1980", "gramm-leach-bliley-1999"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Garn%E2%80%93St._Germain_Depository_Institutions_Act",
+    "featured": true,
+    "verdict": "Within six years, over 1,000 savings and loan institutions failed — the worst financial crisis since the Depression at that time. The taxpayer cost of the S&L bailout reached $132 billion. The industry shrank from 3,234 thrifts in 1986 to 1,645 by 1995, wiping out a pillar of community lending.",
+    "verdictMetrics": [
+      { "label": "S&L failures", "before": "~30/year (pre-1982)", "after": "1,000+ (1986-1995)", "change": "+3,000%" },
+      { "label": "Taxpayer bailout cost", "before": "N/A", "after": "$132 billion", "change": "$132B" },
+      { "label": "Number of thrifts", "before": "3,234 (1986)", "after": "1,645 (1995)", "change": "-49%" }
+    ]
+  },
+  {
+    "id": "cobra-1985",
+    "slug": "cobra-1985",
+    "name": "COBRA",
+    "formalName": "Consolidated Omnibus Budget Reconciliation Act of 1985",
+    "date": "1986-04-07",
+    "type": "legislation",
+    "category": ["healthcare"],
+    "subcategory": ["insurance", "continuation-coverage"],
+    "summary": "Required employers with 20 or more employees to offer continuation of group health insurance coverage to employees and their families after qualifying events such as job loss, reduced work hours, or divorce. Beneficiaries must pay the full premium plus a small administrative fee.",
+    "president": { "name": "Ronald Reagan", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 99, "houseControl": "D", "senateControl": "R" },
+    "vote": {
+      "house": { "yea": 309, "nay": 106, "yea_d": 218, "nay_d": 24, "yea_r": 91, "nay_r": 82, "type": "conference report" },
+      "senate": { "yea": 76, "nay": 17, "yea_d": 41, "nay_d": 3, "yea_r": 35, "nay_r": 14, "type": "conference report" }
+    },
+    "sponsors": [
+      { "name": "Pete Stark", "party": "D", "state": "CA", "chamber": "House" },
+      { "name": "Bob Dole", "party": "R", "state": "KS", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["CPIMEDSL", "UNRATE", "CIVPART"],
+    "relatedLaws": ["erisa-1974", "hipaa-1996", "affordable-care-act"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Consolidated_Omnibus_Budget_Reconciliation_Act_of_1985",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "tax-reform-act-1986",
+    "slug": "tax-reform-act-1986",
+    "name": "Tax Reform Act of 1986",
+    "formalName": "Tax Reform Act of 1986",
+    "date": "1986-10-22",
+    "type": "legislation",
+    "category": ["tax", "housing"],
+    "subcategory": ["income-tax", "simplification", "real-estate"],
+    "summary": "Slashed the top individual income tax rate from 50% to 28% and reduced corporate rates from 46% to 34%, while broadening the tax base by eliminating many deductions and loopholes. Eliminated the deduction for consumer interest (except mortgages) and passive loss shelters, significantly impacting real estate investment.",
+    "president": { "name": "Ronald Reagan", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 99, "houseControl": "D", "senateControl": "R" },
+    "vote": {
+      "house": { "yea": 292, "nay": 136, "yea_d": 176, "nay_d": 74, "yea_r": 116, "nay_r": 62, "type": "conference report" },
+      "senate": { "yea": 74, "nay": 23, "yea_d": 33, "nay_d": 14, "yea_r": 41, "nay_r": 9, "type": "conference report" }
+    },
+    "sponsors": [
+      { "name": "Dan Rostenkowski", "party": "D", "state": "IL", "chamber": "House" },
+      { "name": "Bob Packwood", "party": "R", "state": "OR", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["GINIALLRF", "CP", "MEHOINUSA672N", "USSTHPI", "RHORUSQ156N"],
+    "relatedLaws": ["revenue-act-1964", "obra-1993", "tcja-2017"],
+    "congressGovUrl": "https://www.congress.gov/bill/99th-congress/house-bill/3838",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Tax_Reform_Act_of_1986",
+    "featured": true,
+    "verdict": "Simplified the tax code from 14 brackets to 2 and eliminated thousands of loopholes. Federal revenue held steady as a share of GDP. But the top 1% share of pretax income rose from 11% in 1986 to 22% by 2007, and the effective tax rate on the highest earners fell by a third.",
+    "verdictMetrics": [
+      { "label": "Top marginal rate", "before": "50% (1986)", "after": "28% (1988)", "change": "-44%" },
+      { "label": "Top 1% income share", "before": "11% (1986)", "after": "22% (2007)", "change": "+100%" },
+      { "label": "Tax brackets", "before": "14 brackets", "after": "2 brackets", "change": "-86%" }
+    ]
+  },
+  {
+    "id": "nafta-1993",
+    "slug": "nafta-1993",
+    "name": "NAFTA",
+    "formalName": "North American Free Trade Agreement Implementation Act",
+    "date": "1993-12-08",
+    "type": "legislation",
+    "category": ["labor", "trade"],
+    "subcategory": ["free-trade", "manufacturing"],
+    "summary": "Eliminated most tariffs and trade barriers between the United States, Canada, and Mexico, creating one of the world's largest free trade zones. Proponents credited it with boosting trade and economic growth; critics blamed it for accelerating manufacturing job losses to Mexico.",
+    "president": { "name": "Bill Clinton", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 103, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 234, "nay": 200, "yea_d": 102, "nay_d": 156, "yea_r": 132, "nay_r": 43, "type": "passage" },
+      "senate": { "yea": 61, "nay": 38, "yea_d": 27, "nay_d": 28, "yea_r": 34, "nay_r": 10, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Bill Richardson", "party": "D", "state": "NM", "chamber": "House" },
+      { "name": "Max Baucus", "party": "D", "state": "MT", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["UNRATE", "AHETPI", "OPHNFB", "MANEMP"],
+    "relatedLaws": ["trade-act-1974", "pntr-china-2000", "usmca-2020"],
+    "congressGovUrl": "https://www.congress.gov/bill/103rd-congress/house-bill/3450",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/North_American_Free_Trade_Agreement",
+    "featured": true,
+    "verdict": "US-Mexico-Canada trade tripled from $290 billion in 1993 to over $1.1 trillion by 2016, and consumer goods prices fell. But the US lost an estimated 682,900 manufacturing jobs directly to NAFTA by 2010, with losses concentrated in auto, textile, and electronics sectors in the Midwest and South.",
+    "verdictMetrics": [
+      { "label": "Trilateral trade volume", "before": "$290B (1993)", "after": "$1.1T (2016)", "change": "+280%" },
+      { "label": "US manufacturing jobs lost to NAFTA", "before": "N/A", "after": "682,900 by 2010 (EPI est.)", "change": "-682,900 jobs" },
+      { "label": "Consumer goods CPI", "before": "Rising (1993)", "after": "Flat/falling (2000s)", "change": "Deflationary effect" }
+    ]
+  },
+  {
+    "id": "obra-1993",
+    "slug": "obra-1993",
+    "name": "OBRA 1993",
+    "formalName": "Omnibus Budget Reconciliation Act of 1993",
+    "date": "1993-08-10",
+    "type": "legislation",
+    "category": ["tax"],
+    "subcategory": ["income-tax", "deficit-reduction"],
+    "summary": "Raised the top individual income tax rate from 31% to 39.6% and the corporate rate from 34% to 35%, while expanding the Earned Income Tax Credit for low-income workers. The deficit-reduction package passed without a single Republican vote and preceded the budget surpluses of the late 1990s.",
+    "president": { "name": "Bill Clinton", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 103, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 218, "nay": 216, "yea_d": 218, "nay_d": 41, "yea_r": 0, "nay_r": 175, "type": "passage" },
+      "senate": { "yea": 51, "nay": 50, "yea_d": 51, "nay_d": 6, "yea_r": 0, "nay_r": 44, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Martin Olav Sabo", "party": "D", "state": "MN", "chamber": "House" },
+      { "name": "Jim Sasser", "party": "D", "state": "TN", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["GINIALLRF", "MEHOINUSA672N", "CP", "UNRATE"],
+    "relatedLaws": ["tax-reform-act-1986", "egtrra-2001"],
+    "congressGovUrl": "https://www.congress.gov/bill/103rd-congress/house-bill/2264",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Omnibus_Budget_Reconciliation_Act_of_1993",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "hipaa-1996",
+    "slug": "hipaa-1996",
+    "name": "HIPAA",
+    "formalName": "Health Insurance Portability and Accountability Act of 1996",
+    "date": "1996-08-21",
+    "type": "legislation",
+    "category": ["healthcare"],
+    "subcategory": ["insurance", "privacy"],
+    "summary": "Improved the portability of health insurance coverage for workers changing jobs, established national standards for electronic health care transactions, and created privacy protections for individually identifiable health information. Prohibited group health plans from denying coverage based on pre-existing conditions for those maintaining continuous coverage.",
+    "president": { "name": "Bill Clinton", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 104, "houseControl": "R", "senateControl": "R" },
+    "vote": {
+      "house": { "yea": 421, "nay": 2, "yea_d": 196, "nay_d": 1, "yea_r": 225, "nay_r": 1, "type": "conference report" },
+      "senate": { "yea": 98, "nay": 0, "yea_d": 47, "nay_d": 0, "yea_r": 51, "nay_r": 0, "type": "conference report" }
+    },
+    "sponsors": [
+      { "name": "Nancy Kassebaum", "party": "R", "state": "KS", "chamber": "Senate" },
+      { "name": "Edward Kennedy", "party": "D", "state": "MA", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["CPIMEDSL", "CPIAUCSL"],
+    "relatedLaws": ["erisa-1974", "cobra-1985", "affordable-care-act"],
+    "congressGovUrl": "https://www.congress.gov/bill/104th-congress/house-bill/3103",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "welfare-reform-1996",
+    "slug": "welfare-reform-1996",
+    "name": "Welfare Reform Act",
+    "formalName": "Personal Responsibility and Work Opportunity Reconciliation Act of 1996",
+    "date": "1996-08-22",
+    "type": "legislation",
+    "category": ["safety-net"],
+    "subcategory": ["welfare", "work-requirements"],
+    "summary": "Replaced the Aid to Families with Dependent Children (AFDC) entitlement with Temporary Assistance for Needy Families (TANF) block grants to states. Imposed work requirements and a five-year lifetime limit on federal cash assistance. Welfare caseloads dropped sharply in the years following.",
+    "president": { "name": "Bill Clinton", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 104, "houseControl": "R", "senateControl": "R" },
+    "vote": {
+      "house": { "yea": 328, "nay": 101, "yea_d": 98, "nay_d": 98, "yea_r": 230, "nay_r": 2, "type": "passage" },
+      "senate": { "yea": 78, "nay": 21, "yea_d": 25, "nay_d": 21, "yea_r": 53, "nay_r": 0, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "John Kasich", "party": "R", "state": "OH", "chamber": "House" },
+      { "name": "E. Clay Shaw Jr.", "party": "R", "state": "FL", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["MEHOINUSA672N", "GINIALLRF", "CIVPART", "UNRATE"],
+    "relatedLaws": ["social-security-act-1935", "civil-rights-act-1964", "american-rescue-plan-2021"],
+    "congressGovUrl": "https://www.congress.gov/bill/104th-congress/house-bill/3734",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Personal_Responsibility_and_Work_Opportunity_Reconciliation_Act",
+    "featured": true,
+    "verdict": "Welfare caseloads dropped 60% from 12.3 million in 1996 to 4.6 million by 2002, and employment among single mothers rose from 63% to 76%. But deep poverty (income below 50% of poverty line) increased among the most disadvantaged, and by 2020 TANF reached only 21 of every 100 families in poverty — down from 68 under AFDC.",
+    "verdictMetrics": [
+      { "label": "Welfare caseloads", "before": "12.3M (1996)", "after": "4.6M (2002)", "change": "-63%" },
+      { "label": "Single mother employment", "before": "63% (1996)", "after": "76% (2000)", "change": "+13 pts" },
+      { "label": "TANF-to-poverty ratio", "before": "68 per 100 (AFDC, 1996)", "after": "21 per 100 (TANF, 2020)", "change": "-69%" }
+    ]
+  },
+  {
+    "id": "gramm-leach-bliley-1999",
+    "slug": "gramm-leach-bliley-act",
+    "name": "Gramm-Leach-Bliley Act",
+    "formalName": "Financial Services Modernization Act of 1999",
+    "date": "1999-11-12",
+    "type": "legislation",
+    "category": ["finance"],
+    "subcategory": ["banking", "deregulation"],
+    "summary": "Repealed the Glass-Steagall separation of commercial and investment banking, allowing banks, securities firms, and insurance companies to consolidate. Critics argue it contributed to the conditions that led to the 2008 financial crisis.",
+    "president": { "name": "Bill Clinton", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 106, "houseControl": "R", "senateControl": "R" },
+    "vote": {
+      "house": { "yea": 362, "nay": 57, "yea_d": 138, "nay_d": 69, "yea_r": 207, "nay_r": 5, "type": "conference report" },
+      "senate": { "yea": 90, "nay": 8, "yea_d": 38, "nay_d": 7, "yea_r": 52, "nay_r": 1, "type": "conference report" }
+    },
+    "sponsors": [
+      { "name": "Phil Gramm", "party": "R", "state": "TX", "chamber": "Senate" },
+      { "name": "Jim Leach", "party": "R", "state": "IA", "chamber": "House" },
+      { "name": "Thomas J. Bliley Jr.", "party": "R", "state": "VA", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["SP500", "CP", "TDSP"],
+    "relatedLaws": ["glass-steagall-1933", "commodity-futures-modernization-2000", "dodd-frank-2010"],
+    "congressGovUrl": "https://www.congress.gov/bill/106th-congress/senate-bill/900",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Gramm%E2%80%93Leach%E2%80%93Bliley_Act",
+    "featured": true,
+    "verdict": "Within a decade of repeal, the six largest US banks held assets equal to 64% of GDP, up from 17% in 1995. Credit default swaps grew from virtually nothing to a $58 trillion market. The 2008 financial crisis wiped out $13 trillion in household wealth and pushed unemployment to 10%.",
+    "verdictMetrics": [
+      { "label": "Top 6 bank assets (% of GDP)", "before": "17% (1995)", "after": "64% (2009)", "change": "+276%" },
+      { "label": "Household wealth lost (2008 crisis)", "before": "N/A", "after": "-$13 trillion", "change": "-$13T" },
+      { "label": "Peak unemployment post-crisis", "before": "4.0% (2000)", "after": "10.0% (Oct 2009)", "change": "+6 pts" }
+    ]
+  },
+  {
+    "id": "commodity-futures-modernization-2000",
+    "slug": "commodity-futures-modernization-2000",
+    "name": "Commodity Futures Modernization Act",
+    "formalName": "Commodity Futures Modernization Act of 2000",
+    "date": "2000-12-21",
+    "type": "legislation",
+    "category": ["finance"],
+    "subcategory": ["derivatives", "deregulation"],
+    "summary": "Deregulated over-the-counter derivatives including credit default swaps by exempting them from oversight by the CFTC and SEC. The unregulated derivatives market it enabled grew to tens of trillions of dollars and played a central role in the 2008 financial crisis.",
+    "president": { "name": "Bill Clinton", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 106, "houseControl": "R", "senateControl": "R" },
+    "vote": {
+      "house": { "yea": 292, "nay": 60, "yea_d": 133, "nay_d": 48, "yea_r": 158, "nay_r": 12, "type": "passage" },
+      "senate": { "yea": 95, "nay": 0, "yea_d": 45, "nay_d": 0, "yea_r": 50, "nay_r": 0, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Thomas W. Ewing", "party": "R", "state": "IL", "chamber": "House" },
+      { "name": "Phil Gramm", "party": "R", "state": "TX", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["CP", "TDSP", "USSTHPI"],
+    "relatedLaws": ["gramm-leach-bliley-1999", "dodd-frank-2010"],
+    "congressGovUrl": "https://www.congress.gov/bill/106th-congress/house-bill/5660",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Commodity_Futures_Modernization_Act_of_2000",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "pntr-china-2000",
+    "slug": "pntr-china-2000",
+    "name": "PNTR with China",
+    "formalName": "U.S.-China Relations Act of 2000",
+    "date": "2000-10-10",
+    "type": "legislation",
+    "category": ["labor", "trade"],
+    "subcategory": ["free-trade", "manufacturing"],
+    "summary": "Granted China permanent normal trade relations status, paving the way for China's accession to the World Trade Organization. Ended the annual congressional review of China's trade status. Economists estimate it contributed to significant manufacturing job losses in the US, often called the \"China shock.\"",
+    "president": { "name": "Bill Clinton", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 106, "houseControl": "R", "senateControl": "R" },
+    "vote": {
+      "house": { "yea": 237, "nay": 197, "yea_d": 73, "nay_d": 138, "yea_r": 164, "nay_r": 57, "type": "passage" },
+      "senate": { "yea": 83, "nay": 15, "yea_d": 37, "nay_d": 7, "yea_r": 46, "nay_r": 8, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Bill Archer", "party": "R", "state": "TX", "chamber": "House" },
+      { "name": "William Roth", "party": "R", "state": "DE", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["UNRATE", "AHETPI", "MANEMP", "OPHNFB"],
+    "relatedLaws": ["nafta-1993", "trade-act-1974", "usmca-2020"],
+    "congressGovUrl": "https://www.congress.gov/bill/106th-congress/house-bill/4444",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/United_States%E2%80%93China_Relations_Act_of_2000",
+    "featured": true,
+    "verdict": "Between 2001 and 2015, the US lost an estimated 2.4 million jobs due to the surge in Chinese imports — the \"China shock.\" Manufacturing employment fell from 17.3 million in 2000 to 12.3 million by 2010. Affected communities saw lasting declines in wages, labor force participation, and marriage rates.",
+    "verdictMetrics": [
+      { "label": "Manufacturing jobs", "before": "17.3M (2000)", "after": "12.3M (2010)", "change": "-5M (-29%)" },
+      { "label": "Jobs lost to China shock", "before": "N/A", "after": "2.4M (2001-2015, Autor et al.)", "change": "-2.4M" },
+      { "label": "US trade deficit with China", "before": "$83B (2000)", "after": "$375B (2017)", "change": "+352%" }
+    ]
+  },
+  {
+    "id": "egtrra-2001",
+    "slug": "egtrra-2001",
+    "name": "EGTRRA (Bush Tax Cuts I)",
+    "formalName": "Economic Growth and Tax Relief Reconciliation Act of 2001",
+    "date": "2001-06-07",
+    "type": "legislation",
+    "category": ["tax"],
+    "subcategory": ["income-tax", "tax-cuts"],
+    "summary": "Cut income tax rates across all brackets, created the 10% bracket, doubled the child tax credit, reduced the marriage penalty, and phased out the estate tax. All provisions were set to sunset after 2010. Passed through budget reconciliation with a projected 10-year cost of $1.35 trillion.",
+    "president": { "name": "George W. Bush", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 107, "houseControl": "R", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 240, "nay": 154, "yea_d": 28, "nay_d": 153, "yea_r": 211, "nay_r": 0, "type": "conference report" },
+      "senate": { "yea": 58, "nay": 33, "yea_d": 12, "nay_d": 31, "yea_r": 46, "nay_r": 2, "type": "conference report" }
+    },
+    "sponsors": [
+      { "name": "Bill Thomas", "party": "R", "state": "CA", "chamber": "House" },
+      { "name": "Charles Grassley", "party": "R", "state": "IA", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["GINIALLRF", "MEHOINUSA672N", "CP"],
+    "relatedLaws": ["revenue-act-1964", "obra-1993", "jgtrra-2003", "american-taxpayer-relief-2012"],
+    "congressGovUrl": "https://www.congress.gov/bill/107th-congress/house-bill/1836",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Economic_Growth_and_Tax_Relief_Reconciliation_Act_of_2001",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "mccain-feingold-2002",
+    "slug": "mccain-feingold-2002",
+    "name": "McCain-Feingold Act",
+    "formalName": "Bipartisan Campaign Reform Act of 2002",
+    "date": "2002-03-27",
+    "type": "legislation",
+    "category": ["campaign-finance"],
+    "subcategory": ["soft-money", "advertising"],
+    "summary": "Banned national party committees from raising or spending soft money (unlimited, unregulated donations) and restricted electioneering communications — broadcast ads mentioning a federal candidate — within 30 days of a primary or 60 days of a general election. Key provisions were later struck down by Citizens United.",
+    "president": { "name": "George W. Bush", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 107, "houseControl": "R", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 240, "nay": 189, "yea_d": 198, "nay_d": 12, "yea_r": 41, "nay_r": 176, "type": "passage" },
+      "senate": { "yea": 60, "nay": 40, "yea_d": 48, "nay_d": 2, "yea_r": 11, "nay_r": 38, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "John McCain", "party": "R", "state": "AZ", "chamber": "Senate" },
+      { "name": "Russ Feingold", "party": "D", "state": "WI", "chamber": "Senate" },
+      { "name": "Christopher Shays", "party": "R", "state": "CT", "chamber": "House" },
+      { "name": "Marty Meehan", "party": "D", "state": "MA", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["CP", "CPIAUCSL"],
+    "relatedLaws": ["feca-1971", "buckley-v-valeo-1976", "citizens-united-v-fec"],
+    "congressGovUrl": "https://www.congress.gov/bill/107th-congress/house-bill/2356",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Bipartisan_Campaign_Reform_Act",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "jgtrra-2003",
+    "slug": "jgtrra-2003",
+    "name": "JGTRRA (Bush Tax Cuts II)",
+    "formalName": "Jobs and Growth Tax Relief Reconciliation Act of 2003",
+    "date": "2003-05-28",
+    "type": "legislation",
+    "category": ["tax"],
+    "subcategory": ["capital-gains", "dividends", "tax-cuts"],
+    "summary": "Accelerated the income tax rate cuts from EGTRRA, reduced the top tax rate on capital gains from 20% to 15%, and taxed qualified dividends at the same 15% rate for the first time. Projected cost of $350 billion over 10 years.",
+    "president": { "name": "George W. Bush", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 108, "houseControl": "R", "senateControl": "R" },
+    "vote": {
+      "house": { "yea": 231, "nay": 200, "yea_d": 7, "nay_d": 198, "yea_r": 224, "nay_r": 1, "type": "conference report" },
+      "senate": { "yea": 51, "nay": 50, "yea_d": 2, "nay_d": 46, "yea_r": 49, "nay_r": 2, "type": "conference report" }
+    },
+    "sponsors": [
+      { "name": "Bill Thomas", "party": "R", "state": "CA", "chamber": "House" },
+      { "name": "Charles Grassley", "party": "R", "state": "IA", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["GINIALLRF", "CP", "MEHOINUSA672N"],
+    "relatedLaws": ["egtrra-2001", "american-taxpayer-relief-2012", "tcja-2017"],
+    "congressGovUrl": "https://www.congress.gov/bill/108th-congress/house-bill/2",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Jobs_and_Growth_Tax_Relief_Reconciliation_Act_of_2003",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "hera-2008",
+    "slug": "hera-2008",
+    "name": "HERA",
+    "formalName": "Housing and Economic Recovery Act of 2008",
+    "date": "2008-07-30",
+    "type": "legislation",
+    "category": ["housing"],
+    "subcategory": ["mortgage", "crisis-response"],
+    "summary": "Created the Federal Housing Finance Agency (FHFA) to regulate Fannie Mae and Freddie Mac, authorized Treasury to purchase their stock, established the HOPE for Homeowners program to refinance troubled mortgages, and provided $3.9 billion for community grants to purchase foreclosed properties. Enacted as the housing crisis accelerated.",
+    "president": { "name": "George W. Bush", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 110, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 272, "nay": 152, "yea_d": 227, "nay_d": 3, "yea_r": 45, "nay_r": 149, "type": "passage" },
+      "senate": { "yea": 72, "nay": 13, "yea_d": 47, "nay_d": 1, "yea_r": 25, "nay_r": 12, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Barney Frank", "party": "D", "state": "MA", "chamber": "House" },
+      { "name": "Christopher Dodd", "party": "D", "state": "CT", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["USSTHPI", "MORTGAGE30US", "RHORUSQ156N", "TDSP"],
+    "relatedLaws": ["community-reinvestment-act-1977", "dodd-frank-2010"],
+    "congressGovUrl": "https://www.congress.gov/bill/110th-congress/house-bill/3221",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Housing_and_Economic_Recovery_Act_of_2008",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "citizens-united-2010",
+    "slug": "citizens-united-v-fec",
+    "name": "Citizens United v. FEC",
+    "formalName": "Citizens United v. Federal Election Commission, 558 U.S. 310",
+    "date": "2010-01-21",
+    "type": "court_decision",
+    "category": ["campaign-finance"],
+    "subcategory": ["corporate-power", "first-amendment"],
+    "summary": "Supreme Court ruled that the First Amendment prohibits the government from restricting independent expenditures for political campaigns by corporations, associations, or labor unions. Effectively allowed unlimited corporate spending on elections.",
+    "president": { "name": "Barack Obama", "party": "D", "action": "N/A", "overridden": false },
+    "congress": { "number": 111, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "court": { "majority": 5, "dissent": 4, "opinion": "Kennedy", "dissentBy": "Stevens" }
+    },
+    "sponsors": [
+      { "name": "Anthony Kennedy", "party": "", "state": "", "chamber": "Majority Opinion" },
+      { "name": "John Paul Stevens", "party": "", "state": "", "chamber": "Dissent" }
+    ],
+    "relatedFredSeries": ["CP"],
+    "relatedLaws": ["feca-1971", "mccain-feingold-2002"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Citizens_United_v._FEC",
+    "featured": true,
+    "verdict": "Outside spending in federal elections exploded from $338 million in 2008 to $2.6 billion in 2020. Super PACs, which did not exist before the ruling, spent $2.1 billion in 2020 alone. Dark money — spending by groups that do not disclose donors — grew from $5 million in 2006 to over $1 billion by 2020.",
+    "verdictMetrics": [
+      { "label": "Outside election spending", "before": "$338M (2008)", "after": "$2.6B (2020)", "change": "+669%" },
+      { "label": "Super PAC spending", "before": "$0 (didn't exist)", "after": "$2.1B (2020)", "change": "From zero" },
+      { "label": "Dark money", "before": "$5M (2006)", "after": "$1B+ (2020)", "change": "+20,000%" }
+    ]
+  },
+  {
+    "id": "aca-2010",
+    "slug": "affordable-care-act",
+    "name": "Affordable Care Act",
+    "formalName": "Patient Protection and Affordable Care Act",
+    "date": "2010-03-23",
+    "type": "legislation",
+    "category": ["healthcare"],
+    "subcategory": ["insurance", "coverage"],
+    "summary": "Expanded health insurance coverage through Medicaid expansion, insurance marketplaces, and an individual mandate. Prohibited denial of coverage for pre-existing conditions and allowed children to stay on parents' plans until age 26. The most significant healthcare reform since Medicare in 1965.",
+    "president": { "name": "Barack Obama", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 111, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 219, "nay": 212, "yea_d": 219, "nay_d": 34, "yea_r": 0, "nay_r": 178, "type": "passage" },
+      "senate": { "yea": 60, "nay": 39, "yea_d": 58, "nay_d": 0, "yea_r": 0, "nay_r": 39, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Charles Rangel", "party": "D", "state": "NY", "chamber": "House" },
+      { "name": "Harry Reid", "party": "D", "state": "NV", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["CPIMEDSL", "MANEMP"],
+    "relatedLaws": ["medicare-medicaid-1965", "inflation-reduction-act-2022"],
+    "congressGovUrl": "https://www.congress.gov/bill/111th-congress/house-bill/3590",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Affordable_Care_Act",
+    "featured": true,
+    "verdict": "The uninsured rate fell from 16% in 2010 to 8% by 2016 — 20 million Americans gained coverage. Healthcare cost growth slowed to its lowest rate in 50 years in the years following passage. Pre-existing condition protections covered an estimated 54 million Americans who would otherwise be uninsurable.",
+    "verdictMetrics": [
+      { "label": "Uninsured rate", "before": "16% (2010)", "after": "8% (2016)", "change": "-50%" },
+      { "label": "Americans gaining coverage", "before": "N/A", "after": "20 million (2016)", "change": "+20M" },
+      { "label": "Healthcare cost growth (annual)", "before": "4-6% (2000s avg)", "after": "2.7% (2010-2016 avg)", "change": "-40% slower" }
+    ]
+  },
+  {
+    "id": "dodd-frank-2010",
+    "slug": "dodd-frank-2010",
+    "name": "Dodd-Frank Act",
+    "formalName": "Dodd-Frank Wall Street Reform and Consumer Protection Act",
+    "date": "2010-07-21",
+    "type": "legislation",
+    "category": ["finance", "housing"],
+    "subcategory": ["regulation", "consumer-protection", "mortgage-reform"],
+    "summary": "The most comprehensive financial regulation since the New Deal. Created the Consumer Financial Protection Bureau, established the Financial Stability Oversight Council to monitor systemic risk, imposed the Volcker Rule limiting proprietary trading by banks, and reformed mortgage lending standards to prevent predatory practices.",
+    "president": { "name": "Barack Obama", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 111, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 237, "nay": 192, "yea_d": 234, "nay_d": 19, "yea_r": 3, "nay_r": 173, "type": "conference report" },
+      "senate": { "yea": 60, "nay": 39, "yea_d": 57, "nay_d": 1, "yea_r": 3, "nay_r": 38, "type": "conference report" }
+    },
+    "sponsors": [
+      { "name": "Barney Frank", "party": "D", "state": "MA", "chamber": "House" },
+      { "name": "Christopher Dodd", "party": "D", "state": "CT", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["CP", "TDSP", "MORTGAGE30US", "USSTHPI"],
+    "relatedLaws": ["glass-steagall-1933", "gramm-leach-bliley-1999", "commodity-futures-modernization-2000", "hera-2008"],
+    "congressGovUrl": "https://www.congress.gov/bill/111th-congress/house-bill/4173",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Dodd%E2%80%93Frank_Wall_Street_Reform_and_Consumer_Protection_Act",
+    "featured": true,
+    "verdict": "Bank capital requirements roughly doubled, and the largest banks held $1.3 trillion in high-quality capital by 2019 vs. $500 billion pre-crisis. Consumer complaints to the new CFPB topped 1 million in its first 5 years, recovering $12 billion for consumers. No taxpayer-funded bank bailouts occurred in the decade following.",
+    "verdictMetrics": [
+      { "label": "Big bank capital ratios", "before": "~7% (2008)", "after": "~13% (2019)", "change": "+86%" },
+      { "label": "Consumer $ recovered by CFPB", "before": "N/A (no agency)", "after": "$12B (2011-2016)", "change": "$12B returned" },
+      { "label": "Taxpayer-funded bailouts (2010-2020)", "before": "TARP: $700B (2008)", "after": "0", "change": "0 bailouts" }
+    ]
+  },
+  {
+    "id": "american-taxpayer-relief-2012",
+    "slug": "american-taxpayer-relief-2012",
+    "name": "American Taxpayer Relief Act",
+    "formalName": "American Taxpayer Relief Act of 2012",
+    "date": "2013-01-02",
+    "type": "legislation",
+    "category": ["tax"],
+    "subcategory": ["income-tax", "fiscal-cliff"],
+    "summary": "Permanently extended the Bush-era tax cuts for individuals earning under $400,000 and couples under $450,000, while restoring the 39.6% rate for higher earners. Made permanent the expanded child tax credit and earned income tax credit. Resolved the \"fiscal cliff\" standoff between President Obama and congressional Republicans.",
+    "president": { "name": "Barack Obama", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 112, "houseControl": "R", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 257, "nay": 167, "yea_d": 172, "nay_d": 16, "yea_r": 85, "nay_r": 151, "type": "passage" },
+      "senate": { "yea": 89, "nay": 8, "yea_d": 47, "nay_d": 3, "yea_r": 42, "nay_r": 5, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Harry Reid", "party": "D", "state": "NV", "chamber": "Senate" },
+      { "name": "Mitch McConnell", "party": "R", "state": "KY", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["GINIALLRF", "MEHOINUSA672N", "CP"],
+    "relatedLaws": ["egtrra-2001", "jgtrra-2003", "tcja-2017"],
+    "congressGovUrl": "https://www.congress.gov/bill/112th-congress/house-bill/8",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/American_Taxpayer_Relief_Act_of_2012",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "shelby-county-v-holder-2013",
+    "slug": "shelby-county-v-holder-2013",
+    "name": "Shelby County v. Holder",
+    "formalName": "Shelby County v. Holder, 570 U.S. 529 (2013)",
+    "date": "2013-06-25",
+    "type": "court_decision",
+    "category": ["campaign-finance"],
+    "subcategory": ["voting-rights", "preclearance"],
+    "summary": "Supreme Court struck down Section 4(b) of the Voting Rights Act of 1965, which contained the formula determining which jurisdictions were subject to federal preclearance before changing voting laws. The decision effectively disabled the preclearance requirement of Section 5, enabling states to change election laws without federal approval.",
+    "president": { "name": "Barack Obama", "party": "D", "action": "N/A", "overridden": false },
+    "congress": { "number": 113, "houseControl": "R", "senateControl": "D" },
+    "vote": {
+      "court": { "majority": 5, "dissent": 4, "opinion": "Roberts", "dissentBy": "Ginsburg" }
+    },
+    "sponsors": [
+      { "name": "John Roberts", "party": "", "state": "", "chamber": "Majority Opinion" },
+      { "name": "Ruth Bader Ginsburg", "party": "", "state": "", "chamber": "Dissent" }
+    ],
+    "relatedFredSeries": ["CIVPART", "CPIAUCSL"],
+    "relatedLaws": ["civil-rights-act-1964", "citizens-united-v-fec"],
+    "congressGovUrl": "",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Shelby_County_v._Holder",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "tcja-2017",
+    "slug": "tcja-2017",
+    "name": "Tax Cuts and Jobs Act",
+    "formalName": "Tax Cuts and Jobs Act of 2017",
+    "date": "2017-12-22",
+    "type": "legislation",
+    "category": ["tax"],
+    "subcategory": ["income-tax", "corporate-tax", "tax-cuts"],
+    "summary": "Cut the corporate tax rate from 35% to 21% permanently and reduced individual income tax rates temporarily through 2025. Doubled the standard deduction, capped the state and local tax (SALT) deduction at $10,000, and created a 20% deduction for pass-through business income. Estimated to add $1.9 trillion to the deficit over 10 years.",
+    "president": { "name": "Donald Trump", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 115, "houseControl": "R", "senateControl": "R" },
+    "vote": {
+      "house": { "yea": 224, "nay": 201, "yea_d": 0, "nay_d": 192, "yea_r": 224, "nay_r": 12, "type": "conference report" },
+      "senate": { "yea": 51, "nay": 48, "yea_d": 0, "nay_d": 46, "yea_r": 51, "nay_r": 0, "type": "conference report" }
+    },
+    "sponsors": [
+      { "name": "Kevin Brady", "party": "R", "state": "TX", "chamber": "House" },
+      { "name": "Orrin Hatch", "party": "R", "state": "UT", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["CP", "GINIALLRF", "MEHOINUSA672N", "UNRATE"],
+    "relatedLaws": ["tax-reform-act-1986", "egtrra-2001", "jgtrra-2003"],
+    "congressGovUrl": "https://www.congress.gov/bill/115th-congress/house-bill/1",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Tax_Cuts_and_Jobs_Act_of_2017",
+    "featured": true,
+    "verdict": "The corporate tax cut from 35% to 21% drove a record $1 trillion in stock buybacks in 2018, boosting share prices. Real median household income rose 6.8% from 2017-2019, but 65% of the tax benefit went to the top quintile. The national debt increased by $1.9 trillion over the budget window.",
+    "verdictMetrics": [
+      { "label": "Corporate tax rate", "before": "35% (2017)", "after": "21% (2018)", "change": "-40%" },
+      { "label": "Stock buybacks (2018)", "before": "$519B (2017)", "after": "$1.1T (2018)", "change": "+106%" },
+      { "label": "Share of benefit to top 20%", "before": "N/A", "after": "65% of total tax cut", "change": "65%" }
+    ]
+  },
+  {
+    "id": "usmca-2020",
+    "slug": "usmca-2020",
+    "name": "USMCA",
+    "formalName": "United States-Mexico-Canada Agreement Implementation Act",
+    "date": "2020-01-29",
+    "type": "legislation",
+    "category": ["trade"],
+    "subcategory": ["free-trade", "labor-standards"],
+    "summary": "Replaced NAFTA with updated trade rules requiring higher labor and environmental standards, stronger intellectual property protections, and new digital trade provisions. Required 75% of auto content to be made in North America (up from 62.5%) and mandated that 40-45% of auto content be made by workers earning at least $16/hour.",
+    "president": { "name": "Donald Trump", "party": "R", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 116, "houseControl": "D", "senateControl": "R" },
+    "vote": {
+      "house": { "yea": 385, "nay": 41, "yea_d": 193, "nay_d": 38, "yea_r": 192, "nay_r": 2, "type": "passage" },
+      "senate": { "yea": 89, "nay": 10, "yea_d": 38, "nay_d": 8, "yea_r": 51, "nay_r": 2, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Kevin Brady", "party": "R", "state": "TX", "chamber": "House" },
+      { "name": "Charles Grassley", "party": "R", "state": "IA", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["UNRATE", "AHETPI", "OPHNFB"],
+    "relatedLaws": ["nafta-1993", "trade-act-1974", "pntr-china-2000"],
+    "congressGovUrl": "https://www.congress.gov/bill/116th-congress/house-bill/5430",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/United_States%E2%80%93Mexico%E2%80%93Canada_Agreement",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "american-rescue-plan-2021",
+    "slug": "american-rescue-plan-2021",
+    "name": "American Rescue Plan",
+    "formalName": "American Rescue Plan Act of 2021",
+    "date": "2021-03-11",
+    "type": "legislation",
+    "category": ["safety-net"],
+    "subcategory": ["stimulus", "pandemic-response"],
+    "summary": "A $1.9 trillion COVID-19 relief package that provided $1,400 direct payments to most Americans, extended enhanced unemployment benefits, expanded the child tax credit to up to $3,600 per child, funded vaccine distribution, and provided aid to state and local governments, schools, and small businesses.",
+    "president": { "name": "Joe Biden", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 117, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 220, "nay": 211, "yea_d": 220, "nay_d": 1, "yea_r": 0, "nay_r": 210, "type": "passage" },
+      "senate": { "yea": 50, "nay": 49, "yea_d": 50, "nay_d": 0, "yea_r": 0, "nay_r": 49, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "John Yarmuth", "party": "D", "state": "KY", "chamber": "House" }
+    ],
+    "relatedFredSeries": ["UNRATE", "CPIAUCSL", "MEHOINUSA672N", "TDSP"],
+    "relatedLaws": ["welfare-reform-1996", "social-security-act-1935"],
+    "congressGovUrl": "https://www.congress.gov/bill/117th-congress/house-bill/1319",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/American_Rescue_Plan_Act_of_2021",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  },
+  {
+    "id": "inflation-reduction-act-2022",
+    "slug": "inflation-reduction-act-2022",
+    "name": "Inflation Reduction Act",
+    "formalName": "Inflation Reduction Act of 2022",
+    "date": "2022-08-16",
+    "type": "legislation",
+    "category": ["healthcare"],
+    "subcategory": ["drug-pricing", "climate", "tax"],
+    "summary": "Allowed Medicare to negotiate prices for certain prescription drugs for the first time, capped insulin costs at $35/month for Medicare beneficiaries, and extended ACA marketplace subsidies. Also invested $369 billion in energy security and climate change provisions and imposed a 15% minimum corporate tax.",
+    "president": { "name": "Joe Biden", "party": "D", "action": "SIGNED", "overridden": false },
+    "congress": { "number": 117, "houseControl": "D", "senateControl": "D" },
+    "vote": {
+      "house": { "yea": 220, "nay": 207, "yea_d": 220, "nay_d": 0, "yea_r": 0, "nay_r": 207, "type": "passage" },
+      "senate": { "yea": 51, "nay": 50, "yea_d": 51, "nay_d": 0, "yea_r": 0, "nay_r": 50, "type": "passage" }
+    },
+    "sponsors": [
+      { "name": "Joe Manchin", "party": "D", "state": "WV", "chamber": "Senate" },
+      { "name": "Chuck Schumer", "party": "D", "state": "NY", "chamber": "Senate" }
+    ],
+    "relatedFredSeries": ["CPIMEDSL", "CPIENGSL", "CP", "CPIAUCSL"],
+    "relatedLaws": ["affordable-care-act", "medicare-medicaid-1965"],
+    "congressGovUrl": "https://www.congress.gov/bill/117th-congress/house-bill/5376",
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Inflation_Reduction_Act",
+    "featured": false,
+    "verdict": null,
+    "verdictMetrics": null
+  }
+]

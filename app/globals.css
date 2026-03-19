@@ -1,0 +1,248 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans+Condensed:wght@400;600;700&display=swap');
+
+:root {
+  --bg-primary: #F5F0E8;
+  --bg-card: #EDE8DC;
+  --bg-card-alt: #E6E0D2;
+  --border-primary: #C4B99A;
+  --border-dark: #8A7E66;
+  --text-primary: #2C2416;
+  --text-secondary: #6B5D4A;
+  --text-muted: #9A8C74;
+  --accent-red: #B44040;
+  --accent-blue: #3B5998;
+  --accent-mark: #D4A34A;
+  --hole-punch: #D6CEBC;
+  --ink-stamp: #1A1408;
+  --semantic-good: #4A7C59;
+  --semantic-bad: #B44040;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  /* Blue notebook gridlines — graph paper style */
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 23px,
+      rgba(150, 170, 200, 0.18) 23px,
+      rgba(150, 170, 200, 0.18) 24px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 23px,
+      rgba(150, 170, 200, 0.18) 23px,
+      rgba(150, 170, 200, 0.18) 24px
+    );
+  background-size: 24px 24px;
+}
+
+/* Headings — condensed, uppercase, like card headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans Condensed', 'Arial Narrow', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-stamp);
+}
+
+/* Links — dotted underline like typewriter */
+a {
+  color: var(--accent-mark);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+  transition: color 150ms ease;
+}
+a:hover {
+  color: var(--text-primary);
+}
+
+/* Selection — amber highlight */
+::selection {
+  background-color: var(--accent-mark);
+  color: var(--ink-stamp);
+}
+
+/* Scrollbar styling for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-primary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-dark);
+}
+
+/* Utility classes for the punch card system */
+@layer components {
+  .punch-card {
+    @apply relative;
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: 6px;
+    box-shadow: 2px 3px 0 var(--border-primary), 4px 6px 0 var(--bg-card-alt);
+    overflow: hidden;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+  }
+
+  .punch-card:hover {
+    transform: translateY(-1px);
+    box-shadow: 2px 4px 0 var(--border-primary), 4px 7px 0 var(--bg-card-alt);
+  }
+
+  .punch-divider {
+    border: none;
+    border-top: 2px dashed var(--border-primary);
+    margin: 1.25rem 0;
+  }
+
+  .section-label {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+
+  .meta-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4px 16px;
+    font-size: 12px;
+  }
+
+  .meta-label {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border: 1px solid var(--border-primary);
+    border-radius: 2px;
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 150ms ease;
+  }
+
+  .btn:hover {
+    background: var(--bg-card-alt);
+    border-color: var(--border-dark);
+    color: var(--ink-stamp);
+  }
+
+  .btn-active {
+    background: var(--bg-card-alt);
+    border-color: var(--border-dark);
+    color: var(--ink-stamp);
+  }
+
+  /* Chart container — no overflow hidden so tooltips aren't clipped */
+  .chart-container {
+    @apply relative;
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: 6px;
+  }
+
+  /* Verdict block — the opinionated assessment */
+  .verdict-block {
+    @apply relative;
+    border-left: 3px solid var(--accent-mark);
+    padding-left: 1rem;
+    margin: 1.25rem 0;
+  }
+
+  .verdict-text {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: var(--ink-stamp);
+  }
+
+  .verdict-metrics {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 0.75rem;
+    padding: 0.75rem;
+    background: var(--bg-card-alt);
+    border: 1px solid var(--border-primary);
+    border-radius: 4px;
+  }
+
+  .verdict-metric {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px;
+    gap: 1rem;
+  }
+
+  .verdict-metric-label {
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .verdict-metric-change {
+    font-weight: 700;
+    color: var(--ink-stamp);
+    white-space: nowrap;
+  }
+
+  /* Story card — clickable story selector on homepage */
+  .story-card {
+    @apply relative;
+    background: var(--bg-card);
+    border: 1px solid var(--border-primary);
+    border-radius: 6px;
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: all 150ms ease;
+  }
+
+  .story-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 4px 0 var(--border-primary), 4px 7px 0 var(--bg-card-alt);
+    border-color: var(--border-dark);
+  }
+
+  .story-card-active {
+    border-color: var(--accent-mark);
+    border-width: 2px;
+    box-shadow: 2px 4px 0 var(--accent-mark), 4px 7px 0 var(--bg-card-alt);
+  }
+}

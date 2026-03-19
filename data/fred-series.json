@@ -1,0 +1,61 @@
+{
+  "groups": [
+    {
+      "id": "cost-of-living",
+      "name": "The Cost of Living",
+      "series": [
+        { "id": "CPIAUCSL", "name": "CPI — All Items", "startYear": 1947 },
+        { "id": "CUSR0000SAH1", "name": "CPI — Housing/Shelter", "startYear": 1947 },
+        { "id": "CPIMEDSL", "name": "CPI — Medical Care", "startYear": 1947 },
+        { "id": "CPIUFDSL", "name": "CPI — Food", "startYear": 1967 },
+        { "id": "CPIENGSL", "name": "CPI — Energy", "startYear": 1957 }
+      ]
+    },
+    {
+      "id": "what-you-earn",
+      "name": "What You Earn",
+      "series": [
+        { "id": "MEHOINUSA672N", "name": "Real Median Household Income", "startYear": 1984 },
+        { "id": "AHETPI", "name": "Avg Hourly Earnings (Production)", "startYear": 1964 },
+        { "id": "FEDMINNFRWG", "name": "Federal Minimum Wage", "startYear": 1938 }
+      ]
+    },
+    {
+      "id": "wealth-gap",
+      "name": "The Wealth Gap",
+      "series": [
+        { "id": "GINIALLRF", "name": "Gini Index (Inequality)", "startYear": 1967 },
+        { "id": "CP", "name": "Corporate Profits After Tax", "startYear": 1947 },
+        { "id": "PRS85006173", "name": "Labor Share of Income", "startYear": 1947 },
+        { "id": "OPHNFB", "name": "Productivity (Output/Hour)", "startYear": 1947 }
+      ]
+    },
+    {
+      "id": "housing",
+      "name": "Housing",
+      "series": [
+        { "id": "USSTHPI", "name": "House Price Index", "startYear": 1975 },
+        { "id": "RHORUSQ156N", "name": "Homeownership Rate", "startYear": 1965 },
+        { "id": "MORTGAGE30US", "name": "30-Year Mortgage Rate", "startYear": 1971 }
+      ]
+    },
+    {
+      "id": "labor",
+      "name": "Labor & Work",
+      "series": [
+        { "id": "MANEMP", "name": "Manufacturing Employment", "startYear": 1939 },
+        { "id": "UNRATE", "name": "Unemployment Rate", "startYear": 1948 },
+        { "id": "CIVPART", "name": "Labor Force Participation", "startYear": 1948 }
+      ]
+    },
+    {
+      "id": "debt-education",
+      "name": "Debt & Education",
+      "series": [
+        { "id": "SLOAS", "name": "Student Loan Debt Outstanding", "startYear": 2006 },
+        { "id": "TDSP", "name": "Household Debt Service Ratio", "startYear": 1980 },
+        { "id": "CUSR0000SEEB", "name": "College Tuition CPI", "startYear": 1978 }
+      ]
+    }
+  ]
+}

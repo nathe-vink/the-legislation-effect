@@ -33,9 +33,10 @@ export async function GET(request: NextRequest) {
       },
     });
   } catch (error) {
-    console.error("FRED API error:", error);
+    const message = error instanceof Error ? error.message : String(error);
+    console.error("FRED API error:", message);
     return NextResponse.json(
-      { error: "Failed to fetch FRED data" },
+      { error: "Failed to fetch FRED data", detail: message },
       { status: 500 }
     );
   }

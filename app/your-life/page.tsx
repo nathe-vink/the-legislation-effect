@@ -148,27 +148,51 @@ export default function YourLifePage() {
             const medical = getSummary("CPIMEDSL");
 
             const summaryLines: string[] = [];
-            if (cpi && wages) {
-              const realWageGrowth = ((1 + wages.pctChange / 100) / (1 + cpi.pctChange / 100) - 1) * 100;
-              summaryLines.push(
-                realWageGrowth > 5
-                  ? `Average hourly earnings have grown faster than inflation, rising about ${realWageGrowth.toFixed(0)}% in real terms.`
-                  : realWageGrowth > -5
-                  ? `Average hourly earnings have barely kept pace with inflation, ${realWageGrowth > 0 ? "gaining" : "losing"} about ${Math.abs(realWageGrowth).toFixed(0)}% in real terms.`
-                  : `Average hourly earnings have fallen behind inflation, losing about ${Math.abs(realWageGrowth).toFixed(0)}% of their purchasing power.`
-              );
-            }
-            if (cpi && housing) {
-              const realHousingGrowth = ((1 + housing.pctChange / 100) / (1 + cpi.pctChange / 100) - 1) * 100;
-              if (realHousingGrowth > 10) {
-                summaryLines.push(`Housing costs have risen ${realHousingGrowth.toFixed(0)}% faster than general inflation, squeezing household budgets.`);
+
+            const realWageGrowth = cpi && wages
+              ? ((1 + wages.pctChange / 100) / (1 + cpi.pctChange / 100) - 1) * 100
+              : null;
+            const realHousingGrowth = cpi && housing
+              ? ((1 + housing.pctChange / 100) / (1 + cpi.pctChange / 100) - 1) * 100
+              : null;
+            const realMedicalGrowth = cpi && medical
+              ? ((1 + medical.pctChange / 100) / (1 + cpi.pctChange / 100) - 1) * 100
+              : null;
+
+            // Wages vs essentials: connect the dots
+            if (realWageGrowth !== null) {
+              const wagesBeatHousing = realHousingGrowth !== null && realWageGrowth > realHousingGrowth;
+              const wagesBeatMedical = realMedicalGrowth !== null && realWageGrowth > realMedicalGrowth;
+
+              if (realWageGrowth > 5) {
+                if (!wagesBeatHousing || !wagesBeatMedical) {
+                  const laggards: string[] = [];
+                  if (!wagesBeatHousing && realHousingGrowth !== null) laggards.push(`housing (+${realHousingGrowth.toFixed(0)}%)`);
+                  if (!wagesBeatMedical && realMedicalGrowth !== null) laggards.push(`medical care (+${realMedicalGrowth.toFixed(0)}%)`);
+                  summaryLines.push(
+                    `Average hourly earnings rose ${realWageGrowth.toFixed(0)}% above inflation — but didn't keep up with ${laggards.join(" or ")}, the costs that dominate household budgets.`
+                  );
+                } else {
+                  summaryLines.push(
+                    `Average hourly earnings have grown faster than inflation, rising about ${realWageGrowth.toFixed(0)}% in real terms.`
+                  );
+                }
+              } else if (realWageGrowth > -5) {
+                summaryLines.push(
+                  `Average hourly earnings have barely kept pace with inflation, ${realWageGrowth > 0 ? "gaining" : "losing"} about ${Math.abs(realWageGrowth).toFixed(0)}% in real terms.`
+                );
+              } else {
+                summaryLines.push(
+                  `Average hourly earnings have fallen behind inflation, losing about ${Math.abs(realWageGrowth).toFixed(0)}% of their purchasing power.`
+                );
               }
             }
-            if (cpi && medical) {
-              const realMedicalGrowth = ((1 + medical.pctChange / 100) / (1 + cpi.pctChange / 100) - 1) * 100;
-              if (realMedicalGrowth > 10) {
-                summaryLines.push(`Medical care costs have risen ${realMedicalGrowth.toFixed(0)}% faster than general inflation.`);
-              }
+
+            if (realHousingGrowth !== null && realHousingGrowth > 10) {
+              summaryLines.push(`Housing costs have risen ${realHousingGrowth.toFixed(0)}% faster than general inflation, squeezing household budgets.`);
+            }
+            if (realMedicalGrowth !== null && realMedicalGrowth > 10) {
+              summaryLines.push(`Medical care costs have risen ${realMedicalGrowth.toFixed(0)}% faster than general inflation.`);
             }
 
             if (summaryLines.length === 0) return null;

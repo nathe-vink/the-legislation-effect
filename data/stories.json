@@ -6,8 +6,8 @@
     "abstract": "From 1947 to 1973, productivity and wages rose together. Then they didn't. What happened?",
     "narrative": "For 26 years after World War II, the American economy delivered on its implicit promise: when workers produced more, they earned more. From 1947 to 1973, productivity and hourly compensation rose in near-perfect lockstep — both roughly doubling. A rising tide really did lift all boats.\n\nThen the lines diverged. From 1973 to 2024, productivity rose another 160%. Hourly wages? Up about 15% in real terms. The gap between what American workers produce and what they take home is now wider than at any point in modern history. That surplus — the difference between the wealth workers create and the wages they receive — went somewhere. It went to corporate profits, executive compensation, and shareholders.\n\nThe policy fingerprints are clear. Taft-Hartley (1947) began restricting union tactics. Reagan's firing of PATCO strikers in 1981 sent an unmistakable signal that the federal government would side with management. NAFTA (1993) and China's Permanent Normal Trade Relations (2000) gave employers the ultimate bargaining chip: the credible threat of moving production overseas. None of these laws alone caused the decoupling. Together, they systematically dismantled the institutional framework that once ensured workers shared in the gains they produced.",
     "verdict": "American workers are 2.5x more productive than in 1947. Their real hourly pay has barely budged since 1973. The policies that broke that link have names, sponsors, and vote tallies.",
-    "fredSeries": ["OPHNFB", "AHETPI"],
-    "seriesLabels": { "OPHNFB": "Productivity (Output/Hour)", "AHETPI": "Avg Hourly Earnings" },
+    "fredSeries": ["OPHNFB", "COMPRNFB"],
+    "seriesLabels": { "OPHNFB": "Productivity (Output/Hour)", "COMPRNFB": "Real Compensation Per Hour" },
     "normalizeYear": 1947,
     "lawSlugs": ["taft-hartley-act", "patco-firing-1981", "nafta-1993", "pntr-china-2000"],
     "dateRange": ["1947-01-01", "2024-01-01"]
@@ -19,8 +19,8 @@
     "abstract": "Housing costs have outpaced income for four decades. The policies that were supposed to help made it worse.",
     "narrative": "The National Housing Act of 1934 created the modern American mortgage — long-term, low-down-payment, government-insured. It was one of the most successful pieces of economic legislation in history, lifting homeownership from 44% to over 60% by the 1960s. For a generation, housing was affordable because policy deliberately made it so.\n\nThen the financial engineers arrived. The Garn-St. Germain Act of 1982 deregulated savings and loans, letting them make riskier bets with depositors' money. The S&L crisis followed within a decade. But the real damage came from the financialization of housing itself — mortgages became securities, homes became investment vehicles, and housing costs decoupled from local incomes. Since 1984, the shelter component of CPI has risen roughly 250% while real median household income has grown about 35%.\n\nThe Housing and Economic Recovery Act of 2008 (HERA) was the cleanup job after the subprime mortgage crisis — a crisis enabled by decades of deregulation. It created the Federal Housing Finance Agency and placed Fannie Mae and Freddie Mac into conservatorship. The government effectively nationalized the mortgage market to save it from the consequences of its own deregulation. Housing is now the single largest expense for most American families, consuming over 30% of median income in most metro areas.",
     "verdict": "America built the most successful homeownership system in history, then let financial deregulation turn housing into a speculative asset. Median families now spend more on shelter than on food, transportation, and healthcare combined.",
-    "fredSeries": ["CUSR0000SAH1", "MEHOINUSA672N", "MORTGAGE30US"],
-    "seriesLabels": { "CUSR0000SAH1": "Housing CPI", "MEHOINUSA672N": "Median Household Income", "MORTGAGE30US": "30-Year Mortgage Rate" },
+    "fredSeries": ["CUSR0000SAH1", "MEHOINUSA672N", "USSTHPI"],
+    "seriesLabels": { "CUSR0000SAH1": "Housing CPI", "MEHOINUSA672N": "Median Household Income", "USSTHPI": "House Price Index" },
     "normalizeYear": 1984,
     "lawSlugs": ["national-housing-act-1934", "garn-st-germain-1982", "hera-2008"],
     "dateRange": ["1971-01-01", "2024-01-01"]
@@ -45,8 +45,8 @@
     "abstract": "Glass-Steagall kept banking boring for 66 years. Its repeal made it exciting — and then catastrophic.",
     "narrative": "The Glass-Steagall Act of 1933 was born from catastrophe. After thousands of bank failures wiped out families' savings, Congress erected a wall between commercial banking (where people keep their money) and investment banking (where people make bets). For 66 years, that wall held. Banking was boring, stable, and profitable enough.\n\nThe Gramm-Leach-Bliley Act of 1999 tore the wall down. The argument was that modern financial markets were sophisticated enough to self-regulate, that the old Depression-era restrictions were holding American banks back from competing globally. Within a decade, the \"sophisticated\" financial system had produced collateralized debt obligations, credit default swaps, and the worst financial crisis since the Depression itself. Corporate profits after tax tell the story vividly: they soared after deregulation, crashed spectacularly in 2008, then recovered to even higher levels — while unemployment peaked at 10% and millions lost their homes.\n\nDodd-Frank (2010) was the post-crisis reform, adding new regulations and creating the Consumer Financial Protection Bureau. But it was a patch on a system that had been fundamentally reshaped. The six largest banks are bigger today than they were before the crisis. Too-big-to-fail didn't end — it was ratified. The deregulation experiment produced enormous profits for the financial sector and enormous risks for everyone else.",
     "verdict": "Sixty-six years of financial stability under Glass-Steagall. Nine years after its repeal, the global financial system collapsed. Corporate profits recovered. The 8.7 million jobs lost in the recession took six years to come back.",
-    "fredSeries": ["CP", "UNRATE"],
-    "seriesLabels": { "CP": "Corporate Profits After Tax", "UNRATE": "Unemployment Rate" },
+    "fredSeries": ["CP", "PRS85006173"],
+    "seriesLabels": { "CP": "Corporate Profits After Tax", "PRS85006173": "Labor Share of Income" },
     "normalizeYear": 1947,
     "lawSlugs": ["glass-steagall-act", "gramm-leach-bliley-act", "dodd-frank-2010"],
     "dateRange": ["1947-01-01", "2024-01-01"]
@@ -58,11 +58,11 @@
     "abstract": "Every tax cut since 1964 was sold as a benefit for all Americans. The Gini index tells a different story.",
     "narrative": "The Revenue Act of 1964 cut the top marginal income tax rate from 91% to 70%. It was a Kennedy-Johnson initiative sold as economic stimulus, and by most measures it worked — GDP grew 5.8% in 1964 and 6.5% in 1965. But it also established a pattern: every subsequent tax overhaul would lower top rates further, and each time, the benefits would flow disproportionately upward.\n\nThe Tax Reform Act of 1986 dropped the top rate to 28% — the lowest since before the New Deal. The Gini index, which measures income inequality on a scale from 0 (perfect equality) to 1 (perfect inequality), had been relatively stable from 1947 to the mid-1970s at around 0.39. After the 1986 reform, it began climbing steadily and hasn't stopped. By 2023 it stood above 0.48. The Tax Cuts and Jobs Act of 2017 continued the pattern: the corporate tax rate was slashed from 35% to 21%, corporate profits surged, and median household income growth remained modest.\n\nThe data doesn't prove that tax cuts cause inequality — many factors are at work. But the correlation is striking: every major tax overhaul shifted the tax burden downward from top earners, and after each one, the Gini index rose while corporate profits climbed faster than median incomes. The trickle never quite reached the bottom.",
     "verdict": "The top marginal tax rate fell from 91% in 1963 to 37% today. In that same period, the Gini index rose from 0.39 to 0.48. Corporate profits grew 40x. Median household income grew 1.3x in real terms.",
-    "fredSeries": ["GINIALLRF", "CP", "MEHOINUSA672N"],
-    "seriesLabels": { "GINIALLRF": "Gini Index (Inequality)", "CP": "Corporate Profits After Tax", "MEHOINUSA672N": "Median Household Income" },
-    "normalizeYear": 1967,
+    "fredSeries": ["CP", "MEHOINUSA672N"],
+    "seriesLabels": { "CP": "Corporate Profits After Tax", "MEHOINUSA672N": "Median Household Income" },
+    "normalizeYear": 1984,
     "lawSlugs": ["revenue-act-1964", "tax-reform-act-1986", "tcja-2017"],
-    "dateRange": ["1964-01-01", "2024-01-01"]
+    "dateRange": ["1984-01-01", "2024-01-01"]
   },
   {
     "id": "the-trade-off",
@@ -71,11 +71,11 @@
     "abstract": "Free trade lowered prices and eliminated millions of manufacturing jobs. Was the trade-off worth it?",
     "narrative": "In 1979, American manufacturing employed 19.6 million people. By 2010, that number had fallen to 11.5 million — a loss of 8.1 million jobs, or 41% of the sector. The steepest drops came in two waves that correspond precisely to two trade agreements: NAFTA (effective 1994) and the grant of Permanent Normal Trade Relations with China (2000).\n\nThe economic argument for free trade is real. Consumer prices fell as cheaper imports flooded in. The CPI for goods like clothing, electronics, and furniture declined in real terms throughout the 2000s. A family shopping at Walmart genuinely paid less. But the communities that manufactured those goods — the factory towns of Ohio, Michigan, North Carolina, Pennsylvania — saw their economic base disappear. The \"China shock\" alone eliminated an estimated 2.4 million American jobs between 1999 and 2011, according to research by economists David Autor, David Dorn, and Gordon Hanson.\n\nThe USMCA (2020) attempted to course-correct, adding stronger labor and environmental provisions than NAFTA had. But by then, the restructuring was complete. Manufacturing employment has stabilized around 12.8 million — but at lower wages and with fewer benefits than the union jobs that preceded them. The trade-off was cheaper consumer goods for the country as a whole, purchased at the price of entire regional economies.",
     "verdict": "America lost 8 million manufacturing jobs between 1979 and 2010. Wages stagnated for those who remained. The communities that made those goods never recovered. Trade policy created winners and losers — and never compensated the losers.",
-    "fredSeries": ["MANEMP", "AHETPI"],
-    "seriesLabels": { "MANEMP": "Manufacturing Employment", "AHETPI": "Avg Hourly Earnings" },
-    "normalizeYear": 1964,
+    "fredSeries": ["MANEMP", "MEHOINUSA672N"],
+    "seriesLabels": { "MANEMP": "Manufacturing Employment", "MEHOINUSA672N": "Median Household Income" },
+    "normalizeYear": 1984,
     "lawSlugs": ["nafta-1993", "pntr-china-2000", "usmca-2020"],
-    "dateRange": ["1964-01-01", "2024-01-01"]
+    "dateRange": ["1984-01-01", "2024-01-01"]
   },
   {
     "id": "cost-of-learning",

@@ -27,7 +27,8 @@
         { "id": "GINIALLRF", "name": "Gini Index (Inequality)", "startYear": 1967 },
         { "id": "CP", "name": "Corporate Profits After Tax", "startYear": 1947 },
         { "id": "PRS85006173", "name": "Labor Share of Income", "startYear": 1947 },
-        { "id": "OPHNFB", "name": "Productivity (Output/Hour)", "startYear": 1947 }
+        { "id": "OPHNFB", "name": "Productivity (Output/Hour)", "startYear": 1947 },
+        { "id": "COMPRNFB", "name": "Real Compensation Per Hour", "startYear": 1947 }
       ]
     },
     {

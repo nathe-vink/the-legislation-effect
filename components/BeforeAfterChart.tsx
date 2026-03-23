@@ -93,8 +93,9 @@ export function BeforeAfterChart({
     const height = chartHeight - margin.top - margin.bottom;
 
     const g = svg
-      .attr("width", dimensions.width)
-      .attr("height", chartHeight)
+      .attr("viewBox", `0 0 ${dimensions.width} ${chartHeight}`)
+      .attr("preserveAspectRatio", "none")
+      .style("height", `${chartHeight}px`)
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 

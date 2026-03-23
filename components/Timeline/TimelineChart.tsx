@@ -105,8 +105,9 @@ export function TimelineChart({
     const height = dimensions.height - margin.top - margin.bottom;
 
     const g = svg
-      .attr("width", dimensions.width)
-      .attr("height", dimensions.height)
+      .attr("viewBox", `0 0 ${dimensions.width} ${dimensions.height}`)
+      .attr("preserveAspectRatio", "none")
+      .style("height", `${dimensions.height}px`)
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
@@ -321,9 +322,8 @@ export function TimelineChart({
 
   return (
     <div ref={containerRef} className="relative w-full">
-      <svg ref={svgRef} className="w-full" />
-      {/* Legend */}
-      <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 px-2">
+      {/* Legend — centered above chart */}
+      <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mb-2 px-2">
         {series.map((s, i) => (
           <div key={s.id} className="flex items-center gap-1.5">
             <div className="w-4 h-0.5" style={{ backgroundColor: s.color || LINE_COLORS[i % LINE_COLORS.length] }} />
@@ -331,6 +331,7 @@ export function TimelineChart({
           </div>
         ))}
       </div>
+      <svg ref={svgRef} className="w-full" />
       <div
         ref={tooltipRef}
         className="absolute hidden pointer-events-none z-10 max-w-[280px] punch-card px-4 py-3"

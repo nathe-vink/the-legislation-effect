@@ -48,7 +48,7 @@ export default async function LawPage({ params }: PageProps) {
   if (!law) notFound();
 
   return (
-    <div>
+    <div className="max-w-3xl mx-auto">
       <div className="mb-6">
         <BackButton />
       </div>

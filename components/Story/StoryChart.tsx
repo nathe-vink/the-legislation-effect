@@ -83,8 +83,9 @@ export function StoryChart({
     const height = dimensions.height - margin.top - margin.bottom;
 
     const g = svg
-      .attr("width", dimensions.width)
-      .attr("height", dimensions.height)
+      .attr("viewBox", `0 0 ${dimensions.width} ${dimensions.height}`)
+      .attr("preserveAspectRatio", "none")
+      .style("height", `${dimensions.height}px`)
       .append("g")
       .attr("transform", `translate(${margin.left},${margin.top})`);
 
